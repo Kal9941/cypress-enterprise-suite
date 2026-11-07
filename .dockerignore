@@ -1,0 +1,21 @@
+# Build do spike cypress#005 (lambda/Dockerfile) — contexto é a raiz do repo.
+# Nunca o node_modules do host (Windows): precisa ser instalado dentro do container Linux.
+node_modules
+.git
+.github
+.claude
+.vscode
+.agents
+docs
+performance
+scripts
+
+cypress/reports
+cypress/screenshots
+cypress/downloads
+
+payment.credentials.json
+*.log
+*.tmp
+
+README.md

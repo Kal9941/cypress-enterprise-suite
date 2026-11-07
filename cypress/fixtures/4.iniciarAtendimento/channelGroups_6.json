@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": 7,
+      "name": "ATENDIMENTO",
+      "channels": [
+        {
+          "id": 6,
+          "name": "WHATSAPP OFICIAL - 62 98222-4382"
+        }
+      ],
+      "agents_total": 37,
+      "agents_available": 2
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "id": 261009001,
+      "client_id": 867092,
+      "client_name": "KLISMAM JUNIOR MONTEIRO",
+      "animal_id": null,
+      "animal_name": null,
+      "prescriber_id": 18780,
+      "prescriber_name": "ABADIO JOSE SILVA",
+      "registered_at": "2026-10-22T12:00:00Z",
+      "status": "open",
+      "sale_value_discounted": 38.01
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "per_page": 20,
+    "total": 1,
+    "total_pages": 1,
+    "has_next": false,
+    "has_previous": false
+  },
+  "summary": {
+    "total": 1,
+    "human": 1,
+    "animal": 0,
+    "open": 1,
+    "awaiting_delivery": 0,
+    "delivered": 0,
+    "discarded": 0
+  }
+}

@@ -1,0 +1,61 @@
+name: Schema drift dos mocks
+
+# ROADMAP P2-15 (decisão do operador em 2026-11-06): roda specs de LEITURA contra a API real da dev com o Auto-Sync ligado, que reescreve os
+# fixtures com a resposta do servidor, e compara só a FORMA (chaves e tipos) contra o que está no repositório (scripts/schema-drift.js).
+# O git diff cru não serve de alarme: contagens e listas mudam a cada rodada. Fica vermelho só com chave nova, chave sumida ou tipo trocado.
+# Só entram specs medidas como somente leitura em API real (3.central: 19/19 em 2026-11-06); spec que grava na dev não entra aqui.
+
+on:
+  schedule:
+    # Segunda-feira 09:00 UTC (06:00 em Brasília), antes do expediente
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+    inputs:
+      specs:
+        description: 'Specs de leitura, separadas por vírgula (ex.: cypress/e2e/3.central.cy.js)'
+        required: false
+        default: 'cypress/e2e/3.central.cy.js'
+
+# Mesma fila do cypress.yml: um run por vez contra a API dev
+concurrency:
+  group: cypress-api-dev
+  cancel-in-progress: false
+
+jobs:
+  schema-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Rodar as specs de leitura em API real com Auto-Sync
+        # O resultado dos testes não decide este job (a massa real pode mudar); quem decide é a comparação de forma abaixo
+        continue-on-error: true
+        uses: cypress-io/github-action@v6
+        with:
+          install: false
+          command: npx cypress run --browser chrome --env SESSION_LABEL=schema-drift,USE_MOCKS=false,AUTO_SYNC_MOCKS=true --spec ${{ github.event.inputs.specs || 'cypress/e2e/3.central.cy.js' }}
+        env:
+          CYPRESS_userCnpj: ${{ secrets.CYPRESS_USER_CNPJ || '11111111111111' }}
+          CYPRESS_user: ${{ secrets.CYPRESS_USER || '4' }}
+          CYPRESS_userPassword: ${{ secrets.CYPRESS_USER_PASSWORD || 'Cypress@prime26' }}
+
+      - name: Comparar a forma dos fixtures sincronizados
+        run: node scripts/schema-drift.js
+
+      - name: Guardar os fixtures sincronizados
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fixtures-sincronizados
+          path: cypress/fixtures/
+          retention-days: 14

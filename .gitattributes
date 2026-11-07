@@ -1,0 +1,2 @@
+# Fixtures de fronteira de tamanho: o tamanho em bytes é o que importa; sem conversão de fim de linha
+cypress/fixtures/5.atendimentos/anexos/limites/** binary

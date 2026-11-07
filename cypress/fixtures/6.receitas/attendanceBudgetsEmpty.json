@@ -1,0 +1,16 @@
+{
+  "data": [],
+  "totals": {
+    "budget_total": 0,
+    "completed_total": 0,
+    "receivable_total": 0
+  },
+  "pagination": {
+    "page": 1,
+    "per_page": 100,
+    "total": 0,
+    "total_pages": 0,
+    "has_next": false,
+    "has_previous": false
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "items": [
+    {
+      "id": 341,
+      "name": "continuar_atendimento_util",
+      "category": 2,
+      "body": "Olá, segue um status do seu pedido. \n{{1}} \nVocê pode verificar o status do seu pedido no botão abaixo:",
+      "rendered_body": "Olá, segue um status do seu pedido. \n{{1}} \nVocê pode verificar o status do seu pedido no botão abaixo:",
+      "preview": "Olá, segue um status do seu pedido. \n{{1}} \nVocê pode verificar o status do seu pedido no botão abaixo:",
+      "variables": [
+        {
+          "order": 1,
+          "variable_type": 5,
+          "required": true,
+          "principal": true,
+          "fixed_text": null
+        }
+      ]
+    },
+    {
+      "id": 342,
+      "name": "template_com_imagem",
+      "category": 2,
+      "body": "*CHAMADO DE PLANTÃO*\n\nOlá! Você tem um chamado aberto que precisa de atenção.\n\n Cliente: {{1}}\n\nAcesse o controle interno e verifique o atendimento o quanto antes.",
+      "rendered_body": "*CHAMADO DE PLANTÃO*\n\nOlá! Você tem um chamado aberto que precisa de atenção.\n\n Cliente: \n\nAcesse o controle interno e verifique o atendimento o quanto antes.",
+      "preview": "*CHAMADO DE PLANTÃO*\n\nOlá! Você tem um chamado aberto que precisa de atenção.\n\n Cliente: {{1}}\n\nAcesse o controle",
+      "variables": [
+        {
+          "order": 1,
+          "variable_type": 1,
+          "required": false,
+          "principal": false,
+          "fixed_text": null
+        }
+      ]
+    },
+    {
+      "id": 343,
+      "name": "teste_utilidade",
+      "category": 2,
+      "body": "Olá, o pedido pro seu serviço foi recebido !\n\n{{1}}\n\nObrigado!",
+      "rendered_body": "Olá, o pedido pro seu serviço foi recebido !\n\n\n\nObrigado!",
+      "preview": "Olá, o pedido pro seu serviço foi recebido !\n\n{{1}}\n\nObrigado!",
+      "variables": [
+        {
+          "order": 1,
+          "variable_type": 1,
+          "required": false,
+          "principal": false,
+          "fixed_text": null
+        }
+      ]
+    },
+    {
+      "id": 345,
+      "name": "envio_imagem",
+      "category": 1,
+      "body": "Segue informações da sua formula",
+      "rendered_body": "Segue informações da sua formula",
+      "preview": "Segue informações da sua formula",
+      "variables": []
+    },
+    {
+      "id": 346,
+      "name": "finalizar_atendimento",
+      "category": 1,
+      "body": "Seu atendimento foi finalizado com sucesso.\nSe surgir qualquer dúvida ou necessidade, fique à vontade para nos acionar novamente ou clique no botão abaixo.\nAgradecemos seu contato!",
+      "rendered_body": "Seu atendimento foi finalizado com sucesso.\nSe surgir qualquer dúvida ou necessidade, fique à vontade para nos acionar novamente ou clique no botão abaixo.\nAgradecemos seu contato!",
+      "preview": "Seu atendimento foi finalizado com sucesso.\nSe surgir qualquer dúvida ou necessidade, fique à vontade para nos acionar",
+      "variables": []
+    },
+    {
+      "id": 347,
+      "name": "rastreablidade",
+      "category": 1,
+      "body": "Seu pedido está em conferência. Em breve retornaremos com a atualização.",
+      "rendered_body": "Seu pedido está em conferência. Em breve retornaremos com a atualização.",
+      "preview": "Seu pedido está em conferência. Em breve retornaremos com a atualização.",
+      "variables": []
+    },
+    {
+      "id": 348,
+      "name": "iniciar_conversa_cliente",
+      "category": 1,
+      "body": "Olá! Aqui é *{{1}}*, da OmniCare.\n\nTudo bem com você!\n*Pode falar um minutinho agora?*",
+      "rendered_body": "Olá! Aqui é *Klismammonteiro*, da OmniCare.\n\nTudo bem com você!\n*Pode falar um minutinho agora?*",
+      "preview": "Olá! Aqui é *{{1}}*, da OmniCare.\n\nTudo bem com você!\n*Pode falar um minutinho agora?*",
+      "variables": [
+        {
+          "order": 1,
+          "variable_type": 3,
+          "required": false,
+          "principal": false,
+          "fixed_text": null
+        }
+      ]
+    },
+    {
+      "id": 349,
+      "name": "continuidade_atendimento",
+      "category": 1,
+      "body": "Olá! \n*OmniCare* por aqui! \n\n{{1}}\n\nPara dar sequência a este atendimento, selecione o botão abaixo",
+      "rendered_body": "Olá! \n*OmniCare* por aqui! \n\n{{1}}\n\nPara dar sequência a este atendimento, selecione o botão abaixo",
+      "preview": "Olá! \n*OmniCare* por aqui! \n\n{{1}}\n\nPara dar sequência a este atendimento, selecione o botão abaixo",
+      "variables": [
+        {
+          "order": 1,
+          "variable_type": 5,
+          "required": true,
+          "principal": true,
+          "fixed_text": null
+        }
+      ]
+    },
+    {
+      "id": 5208,
+      "name": "teste_seis_variaveis",
+      "category": 1,
+      "body": "Olá *{{1}}*, \n{{2}}, tudo bem ?\nSou *{{3}}* da *{{4}}*,\nposso chamar você de {{5}} ?\n\n{{6}}\n\nAgracemos o retorno, e tenha uma excelente semana !",
+      "rendered_body": "Olá **, \nBom dia, tudo bem ?\nSou *Klismammonteiro* da *OmniCare*,\nposso chamar você de  ?\n\n{{6}}\n\nAgracemos o retorno, e tenha uma excelente semana !",
+      "preview": "Olá *{{1}}*, \n{{2}}, tudo bem ?\nSou *{{3}}* da *{{4}}*,\nposso chamar você de {{5}} ?\n\n{{6}}\n\nAgracemos o retorno, e",
+      "variables": [
+        {
+          "order": 1,
+          "variable_type": 1,
+          "required": false,
+          "principal": false,
+          "fixed_text": null
+        },
+        {
+          "order": 2,
+          "variable_type": 4,
+          "required": false,
+          "principal": false,
+          "fixed_text": null
+        },
+        {
+          "order": 3,
+          "variable_type": 3,
+          "required": false,
+          "principal": false,
+          "fixed_text": null
+        },
+        {
+          "order": 4,
+          "variable_type": 5,
+          "required": false,
+          "principal": false,
+          "fixed_text": "OmniCare"
+        },
+        {
+          "order": 5,
+          "variable_type": 2,
+          "required": false,
+          "principal": false,
+          "fixed_text": null
+        },
+        {
+          "order": 6,
+          "variable_type": 5,
+          "required": true,
+          "principal": true,
+          "fixed_text": null
+        }
+      ]
+    },
+    {
+      "id": 5209,
+      "name": "teste_erro_envio_132001",
+      "category": 1,
+      "body": "Template de teste que nao existe na Meta (forca erro 132001).",
+      "rendered_body": "Template de teste que nao existe na Meta (forca erro 132001).",
+      "preview": "Template de teste que nao existe na Meta (forca erro 132001).",
+      "variables": []
+    },
+    {
+      "id": 7316,
+      "name": "nome_variavel",
+      "category": 1,
+      "body": "Olá, {{nome_cliente}}! \n\nMeu nome é {{nome_usuario}} e serei responsável pelo seu atendimento hoje.\n\nPara que eu possa te ajudar da melhor forma, preciso de algumas informações:\n1 Qual é o problema ou a dificuldade que você está enfrentando?\n2 Desde quando está acontecendo?\n3 Você já tentou alguma solução? Se sim, qual?\nPode me contar com detalhes  estou aqui para resolver!",
+      "rendered_body": "Olá, {{nome_cliente}}! \n\nMeu nome é {{nome_usuario}} e serei responsável pelo seu atendimento hoje.\n\nPara que eu possa te ajudar da melhor forma, preciso de algumas informações:\n1 Qual é o problema ou a dificuldade que você está enfrentando?\n2 Desde quando está acontecendo?\n3 Você já tentou alguma solução? Se sim, qual?\nPode me contar com detalhes  estou aqui para resolver!",
+      "preview": "Olá, {{nome_cliente}}! \n\nMeu nome é {{nome_usuario}} e serei responsável pelo seu atendimento hoje.\n\nPara que eu possa",
+      "variables": [
+        {
+          "order": 1,
+          "variable_type": 1,
+          "required": false,
+          "principal": false,
+          "fixed_text": null
+        },
+        {
+          "order": 2,
+          "variable_type": 1,
+          "required": false,
+          "principal": false,
+          "fixed_text": null
+        }
+      ]
+    }
+  ]
+}

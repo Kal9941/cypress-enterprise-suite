@@ -1,0 +1,22 @@
+{
+  "capabilities": {
+    "can_view_attendance_detail": true,
+    "can_list_attendance_messages": true,
+    "can_send_attendance_messages": true,
+    "can_mark_completed": true,
+    "can_mark_discarded": true,
+    "can_mark_finished": true,
+    "can_transfer_assigned_attendance": true,
+    "can_transfer_pending_attendance": false,
+    "can_send_payment_link": true,
+    "can_add_movement": true,
+    "can_remove_movement": true,
+    "can_save_customer_on_attendance": false,
+    "can_change_attendant_status": true,
+    "can_change_default_customer": true,
+    "can_change_online_payment_with_benefit_program": false,
+    "can_transfer_omni_movement": false,
+    "can_manage_os_support": false,
+    "can_take_attendance": false
+  }
+}

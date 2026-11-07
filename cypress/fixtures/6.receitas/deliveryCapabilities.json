@@ -1,0 +1,28 @@
+{
+  "capabilities": {
+    "can_view_delivery": true,
+    "can_view_delivery_details": false,
+    "can_view_delivery_change_log": false,
+    "can_view_delivery_pending_items": true,
+    "can_attach_budget_to_delivery": true,
+    "can_attach_scheduled_prescription_to_delivery": true,
+    "can_update_delivery": true,
+    "can_change_delivery_fee": true,
+    "can_override_minimum_delivery_value": true,
+    "can_force_unavailable_express_delivery": true,
+    "can_save_delivery_with_zero_fee": true,
+    "can_change_delivery_transit_status": true,
+    "can_complete_unpaid_delivery": true,
+    "can_change_delivery_commission": true,
+    "can_create_delivery": true,
+    "can_cancel_delivery": true,
+    "can_change_delivery_operation_type": true,
+    "can_change_delivery_scheduled_date": true,
+    "can_change_delivery_with_registered_batch": true,
+    "can_manage_delivery_tracking_process": true,
+    "can_change_process_commission": true,
+    "can_remove_process_employee": true,
+    "can_change_process_employee": true,
+    "can_record_nondefault_delivery_process": true
+  }
+}

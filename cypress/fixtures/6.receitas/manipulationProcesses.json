@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "id": 101,
+      "process_type_id": 1,
+      "process_type_name": "PESAGEM",
+      "employee_id": 122,
+      "employee_name": "OPERADOR FARMA",
+      "date": "2026-10-22",
+      "time": "10:00",
+      "sequence": 1,
+      "commissioned": true,
+      "blocks_calculation": false,
+      "blocks_prescription": false
+    },
+    {
+      "id": 102,
+      "process_type_id": 2,
+      "process_type_name": "MISTURA E HOMOGENEIZACAO",
+      "employee_id": 122,
+      "employee_name": "OPERADOR FARMA",
+      "date": "2026-10-22",
+      "time": "10:00",
+      "sequence": 2,
+      "commissioned": false,
+      "blocks_calculation": false,
+      "blocks_prescription": false
+    },
+    {
+      "id": 103,
+      "process_type_id": 3,
+      "process_type_name": "ENCAPSULAMENTO",
+      "employee_id": null,
+      "employee_name": null,
+      "date": null,
+      "time": null,
+      "sequence": 3,
+      "commissioned": false,
+      "blocks_calculation": false,
+      "blocks_prescription": false
+    }
+  ]
+}

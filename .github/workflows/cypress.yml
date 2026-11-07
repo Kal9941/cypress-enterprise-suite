@@ -1,0 +1,128 @@
+name: Testes E2E GitHub - Cypress
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  # Permite rodar os testes manualmente pelo botão no GitHub
+  workflow_dispatch:
+
+# Um run do Cypress por vez contra a API dev: os testes de 0-A/0-B/0-C e os híbridos escrevem na mesma massa real compartilhada (ex.: a reação da mensagem
+# 4854985 do 0-B #14.1, criada no teste e apagada no afterEach), então dois runs ao mesmo tempo (PR + push na main, achado real em 2026-10-23) apagam a
+# massa um do outro. Os jobs do mesmo run seguem em paralelo. cancel-in-progress false: o run em andamento termina; só o run PENDENTE mais antigo é descartado
+# quando chega um terceiro (basta reexecutar pelo botão).
+concurrency:
+  group: cypress-api-dev
+  cancel-in-progress: false
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    strategy:
+      # Um job por spec, cada um com seu próprio processo de Chrome do zero (runner isolado) —
+      # isola a degradação de memória/timing do Chrome headless que só aparece quando a suíte
+      # inteira roda num navegador único e de longa duração (achado real, ver AGENTS.md §1.4 e
+      # ROADMAP.md P1/P2 — ex.: #9.19 e #29.8 só falhavam sob carga da suíte completa, nunca
+      # isolados). fail-fast: false para sempre ver o resultado de todos os specs, mesmo se um
+      # falhar primeiro — senão o GitHub cancela os demais jobs no meio da rodada.
+      fail-fast: false
+      matrix:
+        spec:
+          - 0-A.backend-acesso-cadastros-orcamentos.cy.js
+          - 0-B.backend-atendimentos.cy.js
+          - 0-C.backend-receitas.cy.js
+          # Automações, fluxos e campanhas no motor (separado do 0-A em 2026-11-06): as esperas do ciclo de 30 s do motor rodam num job próprio
+          - 0-D.backend-automacoes-fluxos-campanhas.cy.js
+          - 1.permissoes.cy.js
+          - 2.login.cy.js
+          - 3.central.cy.js
+          - 4.iniciar-atendimento.cy.js
+          - 5-A.atendimentos-fila.cy.js
+          - 5-B1.atendimentos-chat-componentes.cy.js
+          - 5-B2.atendimentos-chat-janela.cy.js
+          - 5-B3.atendimentos-chat-mensagens.cy.js
+          - 5-C.atendimentos-clientes.cy.js
+          - 6.receitas.cy.js
+          - 7.clientes.cy.js
+          - 8.automacoes.cy.js
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Executar testes E2E no Cypress
+        uses: cypress-io/github-action@v6
+        with:
+          # Força modo hermético (100% mockado) nesta execução de CI:
+          # Permite que todos os testes executem de forma 100% isolada e estável em qualquer ambiente.
+          command: npx cypress run --browser chrome --env USE_MOCKS=true,AUTO_SYNC_MOCKS=false --spec cypress/e2e/${{ matrix.spec }}
+        env:
+          CYPRESS_userCnpj: ${{ secrets.CYPRESS_USER_CNPJ || '00000000000191' }}
+          CYPRESS_user: ${{ secrets.CYPRESS_USER || '1' }}
+          CYPRESS_userPassword: ${{ secrets.CYPRESS_USER_PASSWORD || 'DemoPassword123!' }}
+
+      - name: Upload dos Relatórios HTML e XML
+        if: always() # Roda mesmo se algum teste falhar
+        uses: actions/upload-artifact@v4
+        with:
+          # Nome único por spec - obrigatório com upload-artifact@v4 quando múltiplos jobs do
+          # mesmo workflow sobem artefato (um job por item do matrix acima).
+          name: relatorios-testes-${{ matrix.spec }}
+          path: cypress/reports/
+          retention-days: 14
+
+      - name: Upload das Evidências (Screenshots)
+        if: failure() # Envia screenshots caso ocorra falha
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-screenshots-${{ matrix.spec }}
+          path: cypress/screenshots/
+          retention-days: 7
+
+
+  # Junta os relatórios dos 15 jobs acima num painel único (gerado por scripts/relatorio/, só módulos nativos do Node, sem npm ci).
+  # Roda mesmo com spec vermelho (é quando o painel mais serve) e nunca reprova o workflow: o resultado dos testes é o dos jobs do cypress-run.
+  relatorio-consolidado:
+    needs: cypress-run
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Baixar os relatórios de cada spec
+        uses: actions/download-artifact@v4
+        with:
+          pattern: relatorios-testes-*
+          path: relatorios-baixados
+
+      - name: Gerar o painel consolidado
+        continue-on-error: true
+        run: |
+          if [ ! -d relatorios-baixados ]; then echo "Sem artefatos de relatório para consolidar"; exit 0; fi
+          ENTRADAS=$(ls -d relatorios-baixados/*/ | tr '\n' ',' | sed 's/,$//')
+          node scripts/relatorio/gerar-relatorio.js --ci --entrada "$ENTRADAS" --saida painel
+
+      - name: Upload do painel
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: painel-relatorio
+          path: painel/
+          if-no-files-found: ignore
+          retention-days: 14

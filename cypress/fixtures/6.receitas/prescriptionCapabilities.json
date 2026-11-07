@@ -1,0 +1,29 @@
+{
+  "capabilities": {
+    "can_create_recipe": true,
+    "can_list_recipes": true,
+    "can_create_with_pending_recipes": true,
+    "can_update_covenant": true,
+    "can_update_operation_type": true,
+    "can_update_sales_sector": true,
+    "can_update_commissioned_employee": true,
+    "can_update_commissioned_other_store": true,
+    "can_update_pickup_store": true,
+    "can_update_registration_store": true,
+    "can_update_formula_with_financial": true,
+    "can_uncalculate_formula_with_financial": true,
+    "can_calculate_with_minimum_validity": true,
+    "can_edit_discount": true,
+    "can_edit_discount_with_financial": true,
+    "can_access_manipulation_processes": true,
+    "can_update_other_employee_process": true,
+    "can_reassign_process_employee": true,
+    "can_mark_process_commissioned": true,
+    "can_delete_manipulation_process": true,
+    "can_finalize_with_insufficient_stock": true,
+    "can_link_cart": true,
+    "can_generate_nfse": true,
+    "can_register_stock_shortage": true,
+    "can_search_client_agreements": true
+  }
+}

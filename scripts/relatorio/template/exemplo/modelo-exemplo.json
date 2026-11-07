@@ -1,0 +1,1975 @@
+{
+  "meta": {
+    "titulo": "Pharmacie Web — Relatório de testes E2E",
+    "geradoEm": "2026-10-28T19:43:10.000Z",
+    "origem": "ci",
+    "branch": "test/atemporal-massa-revenda-finalize",
+    "sha": "c769086d4e5f60718293a4b5c6d7e8f901234567",
+    "runUrl": "https://github.com/omnicare-org/cypress-enterprise-suite/actions/runs/1234567890",
+    "cypressVersion": "15.4.0",
+    "nodeVersion": "v22.11.0",
+    "navegador": {
+      "nome": "Chrome",
+      "versao": "141.0.7390.65"
+    },
+    "useMocks": false,
+    "sessionLabel": "regressão noturna"
+  },
+  "resumo": {
+    "total": 43,
+    "passed": 30,
+    "failed": 6,
+    "skipped": 4,
+    "skippedMassa": 3,
+    "duracaoMs": 137732,
+    "percentuais": {
+      "passed": "69.77",
+      "failed": "13.95",
+      "skipped": "9.30",
+      "skippedMassa": "6.98"
+    }
+  },
+  "specs": [
+    {
+      "id": "0-C.backend-receitas",
+      "nome": "Backend · Receitas",
+      "arquivo": "cypress/e2e/0-C.backend-receitas.cy.js",
+      "slug": "0-C.backend-receitas",
+      "duracaoMs": 10336,
+      "totais": {
+        "total": 15,
+        "passed": 11,
+        "failed": 2,
+        "skipped": 1,
+        "skippedMassa": 1
+      },
+      "contexts": [
+        {
+          "numero": 1,
+          "nome": "Listagem de receitas (GET /prescriptions)",
+          "totais": {
+            "total": 5,
+            "passed": 5,
+            "failed": 0,
+            "skipped": 0,
+            "skippedMassa": 0
+          },
+          "area": "Receitas",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 783,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 773,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "nome": "Criação de receita (POST /prescriptions)",
+          "totais": {
+            "total": 4,
+            "passed": 2,
+            "failed": 1,
+            "skipped": 1,
+            "skippedMassa": 0
+          },
+          "area": "Receitas",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 790,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/790"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "nome": "Detalhe e entrega (GET /prescriptions/:id)",
+          "totais": {
+            "total": 3,
+            "passed": 2,
+            "failed": 1,
+            "skipped": 0,
+            "skippedMassa": 0
+          },
+          "area": "Entrega",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 801,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/801"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 805,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/805"
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "nome": "Revenda e produtos vinculados",
+          "totais": {
+            "total": 3,
+            "passed": 2,
+            "failed": 0,
+            "skipped": 0,
+            "skippedMassa": 1
+          },
+          "area": "Produtos",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 812,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/812"
+            },
+            {
+              "tipo": "pr",
+              "repo": "cypress",
+              "numero": 58,
+              "url": "https://github.com/omnicare-org/cypress-enterprise-suite/pull/58"
+            }
+          ]
+        }
+      ],
+      "cenarios": [
+        {
+          "id": "0-C #1.1",
+          "titulo": "lista as receitas paginadas com o contrato esperado",
+          "contexto": 1,
+          "indice": 1,
+          "status": "passed",
+          "duracaoMs": 842,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 783,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 773,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "Dado um atendente autenticado",
+              "origem": "cy.log",
+              "duracaoMs": 120,
+              "status": "passed"
+            },
+            {
+              "texto": "Quando listo as receitas da página 1",
+              "origem": "cy.log",
+              "duracaoMs": 610,
+              "status": "passed"
+            },
+            {
+              "texto": "Então o contrato do payload é respeitado",
+              "origem": "cy.log",
+              "duracaoMs": 95,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "0-C #1.2",
+          "titulo": "filtra por status Pendente",
+          "contexto": 1,
+          "indice": 2,
+          "status": "passed",
+          "duracaoMs": 515,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 783,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 773,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "request GET /prescriptions?status=pending",
+              "origem": "comando",
+              "duracaoMs": 488,
+              "status": "passed"
+            },
+            {
+              "texto": "assert status 200",
+              "origem": "comando",
+              "duracaoMs": 3,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "0-C #1.3",
+          "titulo": "filtra por paciente inexistente devolve lista vazia",
+          "contexto": 1,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 430,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 783,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 773,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "request GET /prescriptions?patient=000000",
+              "origem": "comando",
+              "duracaoMs": 402,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "0-C #1.4",
+          "titulo": "ordena por data de entrega decrescente",
+          "contexto": 1,
+          "indice": 4,
+          "status": "passed",
+          "duracaoMs": 601,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 783,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 773,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "0-C #1.5",
+          "titulo": "respeita o limite máximo de itens por página",
+          "contexto": 1,
+          "indice": 5,
+          "status": "passed",
+          "duracaoMs": 477,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 783,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 773,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "0-C #2.1",
+          "titulo": "cria receita alopática com paciente e médico válidos",
+          "contexto": 2,
+          "indice": 1,
+          "status": "failed",
+          "duracaoMs": 2310,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 790,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/790"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": {
+            "categoria": "RESPOSTA HTTP 500 (INTERNAL SERVER ERROR) - CRASH NO BACKEND",
+            "mensagem": "[RESPOSTA HTTP 500] POST /prescriptions retornou 500. Authorization: Bearer [TOKEN_JWT_OMITIDO]",
+            "trecho": "[RESPOSTA HTTP 500 (INTERNAL SERVER ERROR) - CRASH NO BACKEND]\nEsperado: 201 | Recebido: 500\nURL: POST /prescriptions\nCorpo: {\"statusCode\":500,\"message\":\"Internal server error\"}\nAção recomendada: verifique os logs do backend para a rota e reproduza com o mesmo payload.\n\nAssertionError: expected 500 to equal 201\n    at Context.eval (webpack:///./cypress/e2e/0-C.backend-receitas.cy.js:141:30)"
+          },
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "Dado um paciente cadastrado",
+              "origem": "cy.log",
+              "duracaoMs": 140,
+              "status": "passed"
+            },
+            {
+              "texto": "Quando envio o POST /prescriptions",
+              "origem": "cy.log",
+              "duracaoMs": 1980,
+              "status": "passed"
+            },
+            {
+              "texto": "Então recebo 201 com o id da receita",
+              "origem": "cy.log",
+              "duracaoMs": 12,
+              "status": "failed"
+            }
+          ],
+          "anexos": [
+            {
+              "tipo": "screenshot",
+              "titulo": "0-C #2.1 (failed)",
+              "dataUri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+            },
+            {
+              "tipo": "log",
+              "titulo": "Resposta da API",
+              "dataUri": "data:text/plain;base64,UE9TVCAvcHJlc2NyaXB0aW9ucyAtPiA1MDAKeyJzdGF0dXNDb2RlIjo1MDAsIm1lc3NhZ2UiOiJJbnRlcm5hbCBzZXJ2ZXIgZXJyb3IifQp4LXJlcXVlc3QtaWQ6IDlmMWMyZDNlLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMQ=="
+            }
+          ]
+        },
+        {
+          "id": "0-C #2.2",
+          "titulo": "rejeita receita sem médico (400)",
+          "contexto": 2,
+          "indice": 2,
+          "status": "passed",
+          "duracaoMs": 380,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 790,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/790"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "request POST /prescriptions (sem prescriber)",
+              "origem": "comando",
+              "duracaoMs": 351,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "0-C #2.3",
+          "titulo": "rejeita receita sem itens (400)",
+          "contexto": 2,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 402,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 790,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/790"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "0-C #2.4",
+          "titulo": "cria receita manipulada com fórmula e registra o vínculo com o atendimento",
+          "contexto": 2,
+          "indice": 4,
+          "status": "skipped",
+          "duracaoMs": 0,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 790,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/790"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "0-C #3.1",
+          "titulo": "devolve o detalhe com a data de entrega",
+          "contexto": 3,
+          "indice": 1,
+          "status": "failed",
+          "duracaoMs": 1204,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 801,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/801"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 805,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/805"
+            }
+          ],
+          "areas": [
+            "Entrega"
+          ],
+          "erro": {
+            "categoria": "DIVERGÊNCIA DE CONTRATO NO PAYLOAD DA API (JSON SCHEMA)",
+            "mensagem": "[DIVERGÊNCIA DE CONTRATO] GET /prescriptions/:id não devolve o campo `delivery.date` conforme o schema.",
+            "trecho": "[DIVERGÊNCIA DE CONTRATO NO PAYLOAD DA API (JSON SCHEMA)]\nCampo ausente: data.delivery.date (esperado: string, formato date-time)\nCampos recebidos em data.delivery: [\"type\",\"status\"]\n\nAssertionError: expected { Object (type, status) } to have property 'date'\n    at Context.eval (webpack:///./cypress/e2e/0-C.backend-receitas.cy.js:233:44)"
+          },
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "request GET /prescriptions/:id",
+              "origem": "comando",
+              "duracaoMs": 1180,
+              "status": "failed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "0-C #3.2",
+          "titulo": "entrega para amanhã respeita o horário de corte",
+          "contexto": 3,
+          "indice": 2,
+          "status": "passed",
+          "duracaoMs": 733,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 801,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/801"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 805,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/805"
+            }
+          ],
+          "areas": [
+            "Entrega"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "0-C #3.3",
+          "titulo": "receita sem entrega devolve delivery nulo",
+          "contexto": 3,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 509,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 801,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/801"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 805,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/805"
+            }
+          ],
+          "areas": [
+            "Entrega"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "0-C #4.1",
+          "titulo": "busca produto de revenda pelo nome",
+          "contexto": 4,
+          "indice": 1,
+          "status": "passed",
+          "duracaoMs": 658,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 812,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/812"
+            },
+            {
+              "tipo": "pr",
+              "repo": "cypress",
+              "numero": 58,
+              "url": "https://github.com/omnicare-org/cypress-enterprise-suite/pull/58"
+            }
+          ],
+          "areas": [
+            "Produtos"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "0-C #4.2",
+          "titulo": "busca produto de revenda por código de barras",
+          "contexto": 4,
+          "indice": 2,
+          "status": "skippedMassa",
+          "duracaoMs": 95,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 812,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/812"
+            },
+            {
+              "tipo": "pr",
+              "repo": "cypress",
+              "numero": 58,
+              "url": "https://github.com/omnicare-org/cypress-enterprise-suite/pull/58"
+            }
+          ],
+          "areas": [
+            "Produtos"
+          ],
+          "erro": null,
+          "motivoPulo": "Sem massa: nenhum produto de revenda com código de barras cadastrado no ambiente (GET /products?resale=true veio vazio).",
+          "passos": [
+            {
+              "texto": "request GET /products?resale=true",
+              "origem": "comando",
+              "duracaoMs": 90,
+              "status": "passed"
+            },
+            {
+              "texto": "⏭️ Sem massa: nenhum produto de revenda com código de barras",
+              "origem": "cy.log",
+              "duracaoMs": 2,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "0-C #4.3",
+          "titulo": "vincula produtos à receita e recalcula o total",
+          "contexto": 4,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 1180,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "backend",
+              "numero": 812,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/812"
+            },
+            {
+              "tipo": "pr",
+              "repo": "cypress",
+              "numero": 58,
+              "url": "https://github.com/omnicare-org/cypress-enterprise-suite/pull/58"
+            }
+          ],
+          "areas": [
+            "Produtos"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "Dado uma receita aberta",
+              "origem": "cy.log",
+              "duracaoMs": 300,
+              "status": "passed"
+            },
+            {
+              "texto": "Quando vinculo 2 produtos",
+              "origem": "cy.log",
+              "duracaoMs": 640,
+              "status": "passed"
+            },
+            {
+              "texto": "Então o total reflete os itens",
+              "origem": "cy.log",
+              "duracaoMs": 210,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        }
+      ]
+    },
+    {
+      "id": "5-A.atendimentos-fila",
+      "nome": "Atendimentos · Fila",
+      "arquivo": "cypress/e2e/5-A.atendimentos-fila.cy.js",
+      "slug": "5-A.atendimentos-fila",
+      "duracaoMs": 87201,
+      "totais": {
+        "total": 14,
+        "passed": 10,
+        "failed": 3,
+        "skipped": 1,
+        "skippedMassa": 0
+      },
+      "contexts": [
+        {
+          "numero": 1,
+          "nome": "Filtros da fila (grupos e canais)",
+          "totais": {
+            "total": 4,
+            "passed": 4,
+            "failed": 0,
+            "skipped": 0,
+            "skippedMassa": 0
+          },
+          "area": "Fila",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 412,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/412"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "nome": "Cards e status da fila",
+          "totais": {
+            "total": 4,
+            "passed": 3,
+            "failed": 1,
+            "skipped": 0,
+            "skippedMassa": 0
+          },
+          "area": "Fila",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 420,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/420"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 431,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/431"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "nome": "Transferência de atendimento",
+          "totais": {
+            "total": 3,
+            "passed": 1,
+            "failed": 1,
+            "skipped": 1,
+            "skippedMassa": 0
+          },
+          "area": "Transferência",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 455,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/455"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 460,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/460"
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "nome": "Atualização em tempo real da fila",
+          "totais": {
+            "total": 3,
+            "passed": 2,
+            "failed": 1,
+            "skipped": 0,
+            "skippedMassa": 0
+          },
+          "area": "Fila",
+          "issues": []
+        }
+      ],
+      "cenarios": [
+        {
+          "id": "5-A #1.1",
+          "titulo": "filtra por grupo com vínculo a canal",
+          "contexto": 1,
+          "indice": 1,
+          "status": "passed",
+          "duracaoMs": 4120,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 412,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/412"
+            }
+          ],
+          "areas": [
+            "Fila"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "Dado a fila carregada com mocks",
+              "origem": "cy.log",
+              "duracaoMs": 800,
+              "status": "passed"
+            },
+            {
+              "texto": "Quando seleciono o grupo \"Receitas\"",
+              "origem": "cy.log",
+              "duracaoMs": 1100,
+              "status": "passed"
+            },
+            {
+              "texto": "Então só aparecem atendimentos do grupo",
+              "origem": "cy.log",
+              "duracaoMs": 640,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "5-A #1.2",
+          "titulo": "lista só grupos vinculados a canal no seletor",
+          "contexto": 1,
+          "indice": 2,
+          "status": "passed",
+          "duracaoMs": 3380,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 412,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/412"
+            }
+          ],
+          "areas": [
+            "Fila"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "5-A #1.3",
+          "titulo": "limpa os filtros ao trocar de aba",
+          "contexto": 1,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 2790,
+          "tentativas": 2,
+          "flaky": true,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 412,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/412"
+            }
+          ],
+          "areas": [
+            "Fila"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "visit /atendimentos",
+              "origem": "comando",
+              "duracaoMs": 1100,
+              "status": "passed"
+            },
+            {
+              "texto": "click [data-cy=\"aba-minha-fila\"]",
+              "origem": "comando",
+              "duracaoMs": 210,
+              "status": "passed"
+            },
+            {
+              "texto": "click [data-cy=\"aba-fila-geral\"]",
+              "origem": "comando",
+              "duracaoMs": 190,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "5-A #1.4",
+          "titulo": "mantém o filtro de grupo após recarregar a página",
+          "contexto": 1,
+          "indice": 4,
+          "status": "passed",
+          "duracaoMs": 5011,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 412,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/412"
+            }
+          ],
+          "areas": [
+            "Fila"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "5-A #2.1",
+          "titulo": "mostra o card Pendente sem atendente",
+          "contexto": 2,
+          "indice": 1,
+          "status": "passed",
+          "duracaoMs": 2010,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 420,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/420"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 431,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/431"
+            }
+          ],
+          "areas": [
+            "Fila"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "5-A #2.2",
+          "titulo": "mostra o card Em atendimento com o nome do atendente",
+          "contexto": 2,
+          "indice": 2,
+          "status": "failed",
+          "duracaoMs": 10420,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 420,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/420"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 431,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/431"
+            }
+          ],
+          "areas": [
+            "Fila"
+          ],
+          "erro": {
+            "categoria": "DIVERGÊNCIA DE REGRA DE NEGÓCIO / ASSERÇÃO",
+            "mensagem": "[DIVERGÊNCIA DE REGRA DE NEGÓCIO] expected 'Em atendimento' to equal 'Pendente'",
+            "trecho": "[DIVERGÊNCIA DE REGRA DE NEGÓCIO / ASSERÇÃO]\nA asserção falhou: o status exibido no card não é o esperado.\n  esperado: Pendente\n  recebido: Em atendimento\n\nAssertionError: expected 'Em atendimento' to equal 'Pendente'\n    at Context.eval (webpack:///./cypress/e2e/5-A.atendimentos-fila.cy.js:512:36)"
+          },
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "visit /atendimentos",
+              "origem": "comando",
+              "duracaoMs": 1500,
+              "status": "passed"
+            },
+            {
+              "texto": "get [data-cy=\"card-status\"]",
+              "origem": "comando",
+              "duracaoMs": 8700,
+              "status": "failed"
+            }
+          ],
+          "anexos": [
+            {
+              "tipo": "screenshot",
+              "titulo": "5-A #2.2 (failed)",
+              "dataUri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+            }
+          ]
+        },
+        {
+          "id": "5-A #2.3",
+          "titulo": "ordena pelo mais antigo primeiro",
+          "contexto": 2,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 1880,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 420,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/420"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 431,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/431"
+            }
+          ],
+          "areas": [
+            "Fila"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "5-A #2.4",
+          "titulo": "exibe o contador de não lidas",
+          "contexto": 2,
+          "indice": 4,
+          "status": "passed",
+          "duracaoMs": 1650,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 420,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/420"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 431,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/431"
+            }
+          ],
+          "areas": [
+            "Fila"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "5-A #3.1",
+          "titulo": "transfere para outro atendente do mesmo grupo",
+          "contexto": 3,
+          "indice": 1,
+          "status": "failed",
+          "duracaoMs": 12880,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 455,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/455"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 460,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/460"
+            }
+          ],
+          "areas": [
+            "Transferência"
+          ],
+          "erro": {
+            "categoria": "ELEMENTO NÃO ENCONTRADO NO DOM",
+            "mensagem": "[ELEMENTO NÃO ENCONTRADO NO DOM] Timed out retrying after 10000ms: Expected to find element: `[data-cy=\"btn-transferir-atendimento\"]`, but never found it.",
+            "trecho": "[ELEMENTO NÃO ENCONTRADO NO DOM]\nO seletor `[data-cy=\"btn-transferir-atendimento\"]` não existe no DOM após 10s.\nAção recomendada: confirme se o botão depende de capability/permissão do perfil e se a tela terminou de carregar.\n\nCypressError: Timed out retrying after 10000ms: Expected to find element: `[data-cy=\"btn-transferir-atendimento\"]`, but never found it.\n    at Context.eval (webpack:///./cypress/pages/AtendimentosPage.js:212:8)\n    at Context.eval (webpack:///./cypress/e2e/5-A.atendimentos-fila.cy.js:388:12)"
+          },
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "Dado um atendimento em andamento",
+              "origem": "cy.log",
+              "duracaoMs": 2100,
+              "status": "passed"
+            },
+            {
+              "texto": "Quando abro o menu de ações",
+              "origem": "cy.log",
+              "duracaoMs": 700,
+              "status": "passed"
+            },
+            {
+              "texto": "Então clico em Transferir",
+              "origem": "cy.log",
+              "duracaoMs": 10030,
+              "status": "failed"
+            }
+          ],
+          "anexos": [
+            {
+              "tipo": "screenshot",
+              "titulo": "5-A #3.1 (failed)",
+              "dataUri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+            }
+          ]
+        },
+        {
+          "id": "5-A #3.2",
+          "titulo": "transfere para grupo e lista só grupos vinculados",
+          "contexto": 3,
+          "indice": 2,
+          "status": "skipped",
+          "duracaoMs": 0,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 455,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/455"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 460,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/460"
+            }
+          ],
+          "areas": [
+            "Transferência"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "5-A #3.3",
+          "titulo": "bloqueia a transferência sem a permissão 557",
+          "contexto": 3,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 3100,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 455,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/455"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 460,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/460"
+            }
+          ],
+          "areas": [
+            "Transferência"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "Dado um perfil sem a permissão 557",
+              "origem": "cy.log",
+              "duracaoMs": 640,
+              "status": "passed"
+            },
+            {
+              "texto": "Então o botão Transferir não é exibido",
+              "origem": "cy.log",
+              "duracaoMs": 420,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "5-A #4.1",
+          "titulo": "recebe novo atendimento via socket e atualiza a lista",
+          "contexto": 4,
+          "indice": 1,
+          "status": "failed",
+          "duracaoMs": 31230,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [],
+          "areas": [
+            "Fila"
+          ],
+          "erro": {
+            "categoria": "API NÃO RESPONDEU A TEMPO (cy.wait Response Timeout)",
+            "mensagem": "[API NÃO RESPONDEU A TEMPO] cy.wait() timed out waiting 30000ms for the 1st response to the route: `listarFila`.",
+            "trecho": "[API NÃO RESPONDEU A TEMPO (cy.wait Response Timeout)]\nRota aguardada: @listarFila (GET /attendances?status=pending)\nNenhuma resposta em 30s. A requisição foi disparada, mas o servidor não respondeu.\n\nCypressError: `cy.wait()` timed out waiting `30000ms` for the 1st response to the route: `listarFila`. No response ever occurred.\n    at Context.eval (webpack:///./cypress/e2e/5-A.atendimentos-fila.cy.js:95:8)"
+          },
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "intercept GET /attendances",
+              "origem": "comando",
+              "duracaoMs": 4,
+              "status": "passed"
+            },
+            {
+              "texto": "wait @listarFila",
+              "origem": "comando",
+              "duracaoMs": 30000,
+              "status": "failed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "5-A #4.2",
+          "titulo": "remove o atendimento finalizado da fila",
+          "contexto": 4,
+          "indice": 2,
+          "status": "passed",
+          "duracaoMs": 2410,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [],
+          "areas": [
+            "Fila"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "5-A #4.3",
+          "titulo": "reconecta o socket após queda de rede",
+          "contexto": 4,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 6320,
+          "tentativas": 2,
+          "flaky": true,
+          "issues": [],
+          "areas": [
+            "Fila"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        }
+      ]
+    },
+    {
+      "id": "7.clientes",
+      "nome": "Clientes",
+      "arquivo": "cypress/e2e/7.clientes.cy.js",
+      "slug": "7.clientes",
+      "duracaoMs": 40195,
+      "totais": {
+        "total": 14,
+        "passed": 9,
+        "failed": 1,
+        "skipped": 2,
+        "skippedMassa": 2
+      },
+      "contexts": [
+        {
+          "numero": 1,
+          "nome": "Cadastro de cliente",
+          "totais": {
+            "total": 5,
+            "passed": 4,
+            "failed": 1,
+            "skipped": 0,
+            "skippedMassa": 0
+          },
+          "area": "Clientes",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 501,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 509,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "nome": "Busca e listagem",
+          "totais": {
+            "total": 4,
+            "passed": 4,
+            "failed": 0,
+            "skipped": 0,
+            "skippedMassa": 0
+          },
+          "area": "Clientes",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 518,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/518"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "nome": "Vínculo com receitas",
+          "totais": {
+            "total": 3,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "skippedMassa": 2
+          },
+          "area": "Receitas",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 530,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/530"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 820,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/820"
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "nome": "Importação de clientes (backlog)",
+          "totais": {
+            "total": 2,
+            "passed": 0,
+            "failed": 0,
+            "skipped": 2,
+            "skippedMassa": 0
+          },
+          "area": "Clientes",
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "cypress",
+              "numero": 61,
+              "url": "https://github.com/omnicare-org/cypress-enterprise-suite/issues/61"
+            }
+          ]
+        }
+      ],
+      "cenarios": [
+        {
+          "id": "7 #1.1",
+          "titulo": "cadastra cliente pessoa física com dados mínimos",
+          "contexto": 1,
+          "indice": 1,
+          "status": "passed",
+          "duracaoMs": 6120,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 501,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 509,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "Dado a tela de clientes",
+              "origem": "cy.log",
+              "duracaoMs": 900,
+              "status": "passed"
+            },
+            {
+              "texto": "Quando preencho nome e telefone",
+              "origem": "cy.log",
+              "duracaoMs": 2200,
+              "status": "passed"
+            },
+            {
+              "texto": "Então o cliente aparece na lista",
+              "origem": "cy.log",
+              "duracaoMs": 1100,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "7 #1.2",
+          "titulo": "valida o formato do telefone",
+          "contexto": 1,
+          "indice": 2,
+          "status": "passed",
+          "duracaoMs": 2330,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 501,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 509,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "7 #1.3",
+          "titulo": "exige o nome do cliente",
+          "contexto": 1,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 1980,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 501,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 509,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "7 #1.4",
+          "titulo": "salva o cliente e mantém o recurso patient e customer no mock",
+          "contexto": 1,
+          "indice": 4,
+          "status": "failed",
+          "duracaoMs": 14020,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 501,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 509,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": {
+            "categoria": "ELEMENTO OCULTO, COBERTO OU DESABILITADO",
+            "mensagem": "[ELEMENTO OCULTO, COBERTO OU DESABILITADO] `cy.click()` failed because this element is being covered by another element.",
+            "trecho": "[ELEMENTO OCULTO, COBERTO OU DESABILITADO]\nO elemento `<button data-cy=\"btn-salvar-cliente\">` está coberto por `<div class=\"overlay-carregando\">`.\nAção recomendada: aguarde o overlay sumir antes do clique.\n\nCypressError: `cy.click()` failed because this element:\n    `<button data-cy=\"btn-salvar-cliente\">Salvar</button>` is being covered by another element.\n    at Context.eval (webpack:///./cypress/e2e/7.clientes.cy.js:204:10)"
+          },
+          "motivoPulo": null,
+          "passos": [
+            {
+              "texto": "click [data-cy=\"btn-salvar-cliente\"]",
+              "origem": "comando",
+              "duracaoMs": 10010,
+              "status": "failed"
+            }
+          ],
+          "anexos": [
+            {
+              "tipo": "screenshot",
+              "titulo": "7 #1.3 (failed)",
+              "dataUri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+            },
+            {
+              "tipo": "log",
+              "titulo": "Console do navegador",
+              "dataUri": "data:text/plain;base64,W3dhcm5dIG92ZXJsYXktY2FycmVnYW5kbyBhaW5kYSB2aXPDrXZlbCBhcMOzcyAxMHMKW2luZm9dIFBPU1QgL2N1c3RvbWVycyBuw6NvIGZvaSBkaXNwYXJhZG8="
+            }
+          ]
+        },
+        {
+          "id": "7 #1.5",
+          "titulo": "impede cadastro duplicado pelo telefone",
+          "contexto": 1,
+          "indice": 5,
+          "status": "passed",
+          "duracaoMs": 3080,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 501,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+            },
+            {
+              "tipo": "pr",
+              "repo": "front",
+              "numero": 509,
+              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "7 #2.1",
+          "titulo": "busca por nome parcial",
+          "contexto": 2,
+          "indice": 1,
+          "status": "passed",
+          "duracaoMs": 2110,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 518,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/518"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "7 #2.2",
+          "titulo": "busca por telefone com máscara",
+          "contexto": 2,
+          "indice": 2,
+          "status": "passed",
+          "duracaoMs": 2005,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 518,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/518"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "7 #2.3",
+          "titulo": "pagina a listagem com 20 por página",
+          "contexto": 2,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 2740,
+          "tentativas": 2,
+          "flaky": true,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 518,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/518"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "7 #2.4",
+          "titulo": "exibe estado vazio quando nada é encontrado",
+          "contexto": 2,
+          "indice": 4,
+          "status": "passed",
+          "duracaoMs": 1530,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 518,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/518"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "7 #3.1",
+          "titulo": "mostra as receitas do cliente na aba Receitas",
+          "contexto": 3,
+          "indice": 1,
+          "status": "skippedMassa",
+          "duracaoMs": 840,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 530,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/530"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 820,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/820"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": "Sem massa: o cliente fixo de teste não possui receitas no ambiente atual.",
+          "passos": [
+            {
+              "texto": "visit /clientes/detalhe",
+              "origem": "comando",
+              "duracaoMs": 800,
+              "status": "passed"
+            },
+            {
+              "texto": "⏭️ Sem massa: cliente sem receitas",
+              "origem": "cy.log",
+              "duracaoMs": 3,
+              "status": "passed"
+            }
+          ],
+          "anexos": []
+        },
+        {
+          "id": "7 #3.2",
+          "titulo": "abre a receita a partir do cliente",
+          "contexto": 3,
+          "indice": 2,
+          "status": "skippedMassa",
+          "duracaoMs": 790,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 530,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/530"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 820,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/820"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": "Sem massa: nenhuma receita vinculada a cliente encontrada.",
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "7 #3.3",
+          "titulo": "bloqueia o vínculo sem a permissão 649",
+          "contexto": 3,
+          "indice": 3,
+          "status": "passed",
+          "duracaoMs": 2650,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "front",
+              "numero": 530,
+              "url": "https://github.com/omnicare-org/pharmacie-front/issues/530"
+            },
+            {
+              "tipo": "pr",
+              "repo": "backend",
+              "numero": 820,
+              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/820"
+            }
+          ],
+          "areas": [
+            "Receitas"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "7 #4.1",
+          "titulo": "[SKIP] importa planilha com 500 clientes",
+          "contexto": 4,
+          "indice": 1,
+          "status": "skipped",
+          "duracaoMs": 0,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "cypress",
+              "numero": 61,
+              "url": "https://github.com/omnicare-org/cypress-enterprise-suite/issues/61"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        },
+        {
+          "id": "7 #4.2",
+          "titulo": "[SKIP] relata linhas inválidas da importação",
+          "contexto": 4,
+          "indice": 2,
+          "status": "skipped",
+          "duracaoMs": 0,
+          "tentativas": 1,
+          "flaky": false,
+          "issues": [
+            {
+              "tipo": "issue",
+              "repo": "cypress",
+              "numero": 61,
+              "url": "https://github.com/omnicare-org/cypress-enterprise-suite/issues/61"
+            }
+          ],
+          "areas": [
+            "Clientes"
+          ],
+          "erro": null,
+          "motivoPulo": null,
+          "passos": [],
+          "anexos": []
+        }
+      ]
+    }
+  ],
+  "falhasPorCategoria": [
+    {
+      "categoria": "RESPOSTA HTTP 500 (INTERNAL SERVER ERROR) - CRASH NO BACKEND",
+      "qtd": 1
+    },
+    {
+      "categoria": "DIVERGÊNCIA DE CONTRATO NO PAYLOAD DA API (JSON SCHEMA)",
+      "qtd": 1
+    },
+    {
+      "categoria": "DIVERGÊNCIA DE REGRA DE NEGÓCIO / ASSERÇÃO",
+      "qtd": 1
+    },
+    {
+      "categoria": "ELEMENTO NÃO ENCONTRADO NO DOM",
+      "qtd": 1
+    },
+    {
+      "categoria": "API NÃO RESPONDEU A TEMPO (cy.wait Response Timeout)",
+      "qtd": 1
+    },
+    {
+      "categoria": "ELEMENTO OCULTO, COBERTO OU DESABILITADO",
+      "qtd": 1
+    }
+  ],
+  "areas": [
+    {
+      "area": "Receitas",
+      "total": 12,
+      "passed": 8,
+      "failed": 1,
+      "skipped": 3
+    },
+    {
+      "area": "Entrega",
+      "total": 3,
+      "passed": 2,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "area": "Produtos",
+      "total": 3,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 1
+    },
+    {
+      "area": "Fila",
+      "total": 11,
+      "passed": 9,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "area": "Transferência",
+      "total": 3,
+      "passed": 1,
+      "failed": 1,
+      "skipped": 1
+    },
+    {
+      "area": "Clientes",
+      "total": 11,
+      "passed": 8,
+      "failed": 1,
+      "skipped": 2
+    }
+  ],
+  "contagem": {
+    "totalCodigo": 43,
+    "totalDocs": 42,
+    "totalExecutados": 43,
+    "porSpec": [
+      {
+        "spec": "0-C.backend-receitas",
+        "codigo": 15,
+        "executados": 15,
+        "docProjectContext": 15,
+        "docReadme": 15,
+        "ok": true
+      },
+      {
+        "spec": "5-A.atendimentos-fila",
+        "codigo": 14,
+        "executados": 14,
+        "docProjectContext": 13,
+        "docReadme": 12,
+        "ok": false
+      },
+      {
+        "spec": "7.clientes",
+        "codigo": 14,
+        "executados": 14,
+        "docProjectContext": 14,
+        "docReadme": null,
+        "ok": true
+      }
+    ],
+    "avisos": [
+      "5-A.atendimentos-fila: o código tem 14 testes, mas o PROJECT_CONTEXT §1 documenta 13 e o README, 12.",
+      "7.clientes: o README não traz a contagem desta suíte (coluna vazia)."
+    ]
+  }
+}

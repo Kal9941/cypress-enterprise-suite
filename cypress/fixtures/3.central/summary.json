@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "all": 194,
+    "pending": 12,
+    "in_progress": 7,
+    "completed": 0,
+    "finished": 167,
+    "discarded": 8,
+    "waiting": 19
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "resources": {
+    "central": true,
+    "attendance": true,
+    "prescription": true,
+    "patient": true,
+    "prescriber": false,
+    "resale": false,
+    "redo": false,
+    "delivery": false,
+    "financial": false,
+    "metrics": false,
+    "report": false
+  }
+}

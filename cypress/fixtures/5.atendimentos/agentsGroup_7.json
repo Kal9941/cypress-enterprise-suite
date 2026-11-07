@@ -1,0 +1,162 @@
+{
+  "group_id": 7,
+  "group_name": "ATENDIMENTO",
+  "agents": [
+    {
+      "agent_id": 894,
+      "name": "COMERCIAL",
+      "status": "busy",
+      "last_attendance_at": "2026-08-04T09:33:30.873"
+    },
+    {
+      "agent_id": 49,
+      "name": "CRISTIANE PEREIRA E SILVA",
+      "status": "busy",
+      "last_attendance_at": "2026-07-01T11:53:05.213"
+    },
+    {
+      "agent_id": 4,
+      "name": "CYPRESS",
+      "status": "busy",
+      "last_attendance_at": null
+    },
+    {
+      "agent_id": 624,
+      "name": "DANILO ",
+      "status": "busy",
+      "last_attendance_at": "2026-07-31T11:35:31.801"
+    },
+    {
+      "agent_id": 12,
+      "name": "DJONNATHAN FERNANDES DUARTE",
+      "status": "busy",
+      "last_attendance_at": "2026-04-14T16:34:36.597"
+    },
+    {
+      "agent_id": 65,
+      "name": "GUSTAVO HENRIQUE LOPES DE AZEVEDO",
+      "status": "busy",
+      "last_attendance_at": "2026-07-22T09:33:33.431"
+    },
+    {
+      "agent_id": 104,
+      "name": "HENRIQUE",
+      "status": "busy",
+      "last_attendance_at": "2026-06-24T16:08:26.344"
+    },
+    {
+      "agent_id": 84,
+      "name": "IAGOR VICENTE ALVES",
+      "status": "busy",
+      "last_attendance_at": "2026-04-22T12:57:34.537"
+    },
+    {
+      "agent_id": 881,
+      "name": "IAN JUNY SOUZA SILVA",
+      "status": "busy",
+      "last_attendance_at": null
+    },
+    {
+      "agent_id": 58,
+      "name": "ITALO PATRICK SOUZA SILVA",
+      "status": "busy",
+      "last_attendance_at": "2026-07-22T16:01:00.153"
+    },
+    {
+      "agent_id": 93,
+      "name": "JEFERSON GUSTAVO MOREIRA MARTINS",
+      "status": "busy",
+      "last_attendance_at": null
+    },
+    {
+      "agent_id": 114,
+      "name": "JOAO RICARDO DA SILVA",
+      "status": "busy",
+      "last_attendance_at": "2026-07-23T16:21:16.503"
+    },
+    {
+      "agent_id": 50,
+      "name": "JONATHAN JUNIO DE SOUSA BORGES",
+      "status": "busy",
+      "last_attendance_at": "2026-08-04T17:29:02.864"
+    },
+    {
+      "agent_id": 122,
+      "name": "KLISMAM MONTEIRO",
+      "status": "busy",
+      "last_attendance_at": "2026-08-17T16:32:38.859"
+    },
+    {
+      "agent_id": 124,
+      "name": "LUCIANA OmniCare",
+      "status": "busy",
+      "last_attendance_at": null
+    },
+    {
+      "agent_id": 39,
+      "name": "MARCUS VINICIUS DE MORAES REIS",
+      "status": "busy",
+      "last_attendance_at": "2026-04-13T13:40:58.741"
+    },
+    {
+      "agent_id": 72,
+      "name": "MATHEUS MUDESTO DE OLIVEIRA",
+      "status": "busy",
+      "last_attendance_at": "2026-08-21T17:42:32.358"
+    },
+    {
+      "agent_id": 895,
+      "name": "META",
+      "status": "busy",
+      "last_attendance_at": null
+    },
+    {
+      "agent_id": 77,
+      "name": "MILE ANNY CORREA DA COSTA",
+      "status": "busy",
+      "last_attendance_at": null
+    },
+    {
+      "agent_id": 110,
+      "name": "NATHANAEL DAMACENA SIMAO ALVES",
+      "status": "busy",
+      "last_attendance_at": null
+    },
+    {
+      "agent_id": 52,
+      "name": "NICOLAS DE AGUIAR ROSA",
+      "status": "busy",
+      "last_attendance_at": "2026-08-03T08:51:19.471"
+    },
+    {
+      "agent_id": 886,
+      "name": "PABLO RUAN",
+      "status": "busy",
+      "last_attendance_at": null
+    },
+    {
+      "agent_id": 6,
+      "name": "PATRICIA MARIA DE LIMA",
+      "status": "busy",
+      "last_attendance_at": null
+    },
+    {
+      "agent_id": 78,
+      "name": "SOCRATES FREITAS REZENDE",
+      "status": "busy",
+      "last_attendance_at": "2026-07-27T15:58:05.021"
+    },
+    {
+      "agent_id": 865,
+      "name": "VIVIANE DA SILVA",
+      "status": "busy",
+      "last_attendance_at": null
+    },
+    {
+      "agent_id": 60,
+      "name": "WELLINGTON SILVA DA COSTA",
+      "status": "busy",
+      "last_attendance_at": "2026-03-18T17:31:27.287"
+    }
+  ]
+}

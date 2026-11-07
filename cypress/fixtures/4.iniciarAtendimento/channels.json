@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": 3,
+      "name": "WHATSAPP NAO OFICIAL - 4001",
+      "channel_type": 1,
+      "channel_subtype": 0,
+      "port": "51019910",
+      "whatsapp_number": "556227654001",
+      "default_channel_group_id": 1
+    },
+    {
+      "id": 6,
+      "name": "WHATSAPP OFICIAL - 62 98222-4382",
+      "channel_type": 1,
+      "channel_subtype": 1,
+      "port": "51019913",
+      "whatsapp_number": "556282224382",
+      "default_channel_group_id": 7
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+diff --git a/node_modules/cypress-mochawesome-reporter/lib/enhanceReport.js b/node_modules/cypress-mochawesome-reporter/lib/enhanceReport.js
+index 0fdf5f6..78461c8 100644
+--- a/node_modules/cypress-mochawesome-reporter/lib/enhanceReport.js
++++ b/node_modules/cypress-mochawesome-reporter/lib/enhanceReport.js
+@@ -158,11 +158,25 @@ function createVideoContext(video, baseFolder) {
+ function convertImageToBase64(screenshotsDir, imagePath) {
+   if (fse.pathExistsSync(imagePath)) {
+     return convertImg(imagePath);
+-  } else {
+-    const imgPath = path.join(screenshotsDir, imagePath);
++  }
++
++  const imgPath = path.join(screenshotsDir, imagePath);
++  if (fse.pathExistsSync(imgPath)) {
+     return convertImg(imgPath);
+   }
+
++  // PATCH (pharmacie-web, 2026-09-29): screenshot referenciado no .json não existe mais em disco
++  // (achado real: merge cross-sessão em `cypress/reports/html/.jsons/`, arquitetura de
++  // multi-instância do projeto mantém .jsons de sessões concorrentes/anteriores sem limpeza
++  // imediata — ver `.agents/ROADMAP.md`). Sem este guard, `fse.readFileSync` lança ENOENT e
++  // derruba o `Promise.all` de `generateReport.js` inteiro, sem nenhum HTML sendo gerado —
++  // pior que uma miniatura ausente. Loga e retorna um placeholder 1x1 válido em vez de crashar.
++  console.warn(`[cypress-mochawesome-reporter] screenshot ausente, ignorando: ${imagePath}`);
++  return (
++    'data:image/png;base64,' +
++    'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII='
++  );
++
+   function convertImg(pathToFile) {
+     return 'data:image/png;base64, ' + fse.readFileSync(pathToFile, { encoding: 'base64' });
+   }

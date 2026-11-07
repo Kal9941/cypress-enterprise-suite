@@ -1,0 +1,215 @@
+{
+  "items": [
+    {
+      "id": 260900069,
+      "reference_at": "2026-09-17T15:29:32.993Z",
+      "attendant_name": "FABRICIO MARQUES",
+      "customer_name": "+55 62 9355-1486",
+      "customer_phone": "556293551486",
+      "messages": {
+        "unread_count": 2,
+        "last_message": {
+          "type": 0,
+          "content_type": "text",
+          "body": "oi",
+          "occurred_at": "2026-09-17T18:20:53.140Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 3,
+        "name": "WHATSAPP NAO OFICIAL - 4001",
+        "type": 1,
+        "subtype": 0
+      },
+      "group": {
+        "id": 1,
+        "name": "BALCAO"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900090,
+      "reference_at": "2026-09-21T12:23:37.745Z",
+      "attendant_name": "COMERCIAL",
+      "customer_name": "KLISMAM MONTEIRO",
+      "customer_phone": "556293225337",
+      "messages": {
+        "unread_count": 1,
+        "last_message": {
+          "type": 1,
+          "content_type": "text",
+          "body": "Continuar",
+          "occurred_at": "2026-09-21T17:49:43.113Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900057,
+      "reference_at": "2026-09-14T19:17:06.324Z",
+      "attendant_name": "JOÃO RICARDO",
+      "customer_name": "NATÁLIA",
+      "customer_phone": "556284387128",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 0,
+          "content_type": "text",
+          "body": "Link para Detalhes e Pagamento:\n\nhttps://pay.zynta.com.br/pay_01a0b0ef51827a6ea6b79d479b11a7ac",
+          "occurred_at": "2026-09-17T13:35:50.387Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900072,
+      "reference_at": "2026-09-17T17:39:57.808Z",
+      "attendant_name": "MARCUS VINICIUS",
+      "customer_name": "MARCUS REIS",
+      "customer_phone": "556283125784",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 1,
+          "content_type": "text",
+          "body": "Atendente alterado de Italo Patrick p/ Marcus Vinicius",
+          "occurred_at": "2026-09-18T13:47:19.876Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900067,
+      "reference_at": "2026-09-17T14:48:01.816Z",
+      "attendant_name": "FABRICIO MARQUES",
+      "customer_name": "+55 62 9377-0677",
+      "customer_phone": "556293770677",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 0,
+          "content_type": "text",
+          "body": "oi",
+          "occurred_at": "2026-09-17T18:24:35.599Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 3,
+        "name": "WHATSAPP NAO OFICIAL - 4001",
+        "type": 1,
+        "subtype": 0
+      },
+      "group": {
+        "id": 1,
+        "name": "BALCAO"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900081,
+      "reference_at": "2026-09-17T20:18:51.637Z",
+      "attendant_name": "HENRIQUE",
+      "customer_name": "HENRIQUE",
+      "customer_phone": "556297007708",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 0,
+          "content_type": "image",
+          "body": "Segue o orçamento solicitado, validade por 5 dias.\r\n\r\n\r\n\r\nVamos concluir seu orçamento e iniciar seu tratamento?\r\n\r\n25 ANOS DE EXPERIÊNCIA EM MANIPULAÇÃO.\r\n\r\nCONFIANÇA, QUALIDADE E PREÇO JUSTO !\r\n\r\nSiga-nos no Instagran:\r\n",
+          "occurred_at": "2026-09-18T19:39:03.064Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 3,
+        "name": "WHATSAPP NAO OFICIAL - 4001",
+        "type": 1,
+        "subtype": 0
+      },
+      "group": {
+        "id": 1,
+        "name": "BALCAO"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900075,
+      "reference_at": "2026-09-17T18:39:54.699Z",
+      "attendant_name": "ITALO PATRICK",
+      "customer_name": "ÍTALO PATRICK SOUZA SILVA",
+      "customer_phone": "6296285113",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 0,
+          "content_type": "text",
+          "body": "Teste tecnico 399 - verificacao do indicador de envio. Favor desconsiderar.",
+          "occurred_at": "2026-09-21T18:46:55.054Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      },
+      "completed_at": null
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "per_page": 7,
+    "total": 7,
+    "total_pages": 1,
+    "has_next": false,
+    "has_previous": false
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "items": [
+    {
+      "id": 260900126,
+      "reference_at": "2026-09-28T11:46:59.730Z",
+      "attendant_name": "DJONNATHAN DUARTE",
+      "customer_name": "DJONNATHAN",
+      "customer_phone": "556291314937",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 1,
+          "content_type": "text",
+          "body": "# Arquivo nº: 1161\rReceita nº: 260900501 processada pela I.A.!",
+          "occurred_at": "2026-09-30T03:13:54.065Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      }
+    },
+    {
+      "id": 260900151,
+      "reference_at": "2026-09-29T17:49:50.962Z",
+      "attendant_name": "JONATHAN JUNIO",
+      "customer_name": "DAYANE",
+      "customer_phone": "556295092874",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 0,
+          "content_type": "text",
+          "body": "Olá ja estou fazendo seu orçamento\r\n",
+          "occurred_at": "2026-09-29T17:52:12.252Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      }
+    },
+    {
+      "id": 260900150,
+      "reference_at": "2026-09-29T16:59:34.514Z",
+      "attendant_name": "MARCUS VINICIUS",
+      "customer_name": "MARCUS",
+      "customer_phone": "556283125784",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 1,
+          "content_type": "text",
+          "body": "# Arquivo nº: 1202\rReceita nº: 260900475 processada pela I.A.!",
+          "occurred_at": "2026-09-30T12:03:17.870Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      }
+    },
+    {
+      "id": 260900154,
+      "reference_at": "2026-09-30T13:25:06.355Z",
+      "attendant_name": "JEFERSON MARTINS",
+      "customer_name": "DAYANE",
+      "customer_phone": "556285107144",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 0,
+          "content_type": "text",
+          "body": "triste\r\n",
+          "occurred_at": "2026-09-30T13:26:35.819Z"
+        }
+      },
+      "status": 1,
+      "custom_status": {
+        "id": 8,
+        "name": "ORCAMENTO CRIADO",
+        "parent_status": 1,
+        "text_color": "#A6CAF0",
+        "background_color": null
+      },
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      }
+    },
+    {
+      "id": 260900153,
+      "reference_at": "2026-09-30T13:10:18.483Z",
+      "attendant_name": "KLISMAMMONTEIRO",
+      "customer_name": "KLISMAM JUNIOR M MONTEIRO",
+      "customer_phone": "5511999998888",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 0,
+          "content_type": "image",
+          "body": "Legenda imagem JPG",
+          "occurred_at": "2026-09-30T14:48:03.664Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      }
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "per_page": 20,
+    "total": 5,
+    "total_pages": 1,
+    "has_next": false,
+    "has_previous": false
+  }
+}

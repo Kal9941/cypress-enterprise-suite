@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "id": 1260307,
+      "prefix": "62",
+      "number": "993225337",
+      "whatsapp": false,
+      "primary": true,
+      "phone_type": 2,
+      "description": null
+    },
+    {
+      "id": 1260308,
+      "prefix": "91",
+      "number": "983012072",
+      "whatsapp": false,
+      "primary": false,
+      "phone_type": 3,
+      "description": null
+    }
+  ],
+  "total": 2
+}

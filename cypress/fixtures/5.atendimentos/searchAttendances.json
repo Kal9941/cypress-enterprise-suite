@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": 260900112,
+      "reference_at": "2026-09-24T18:57:17.898Z",
+      "attendant_name": "KLISMAMMONTEIRO",
+      "customer_name": "KLISMAM MONTEIRO",
+      "customer_phone": "556293225337",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 0,
+          "content_type": "image",
+          "body": "Legenda da imagem colada via botão direito + Colar",
+          "occurred_at": "2026-09-24T21:07:18.769Z"
+        }
+      },
+      "status": 1,
+      "custom_status": {
+        "id": 21,
+        "name": "aguardando pagamento",
+        "parent_status": 1,
+        "text_color": null,
+        "background_color": null
+      },
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      }
+    },
+    {
+      "id": 260900115,
+      "reference_at": "2026-09-25T17:07:02.031Z",
+      "attendant_name": "KLISMAMMONTEIRO",
+      "customer_name": "",
+      "customer_phone": "5511999998888",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 0,
+          "content_type": "text",
+          "body": "Mensagem automática do Cypress para teste de chat, responda em até 1:30 minutos para validar o teste",
+          "occurred_at": "2026-09-25T17:07:02.122Z"
+        }
+      },
+      "status": 0,
+      "custom_status": null,
+      "channel": {
+        "id": 3,
+        "name": "WHATSAPP NAO OFICIAL - 4001",
+        "type": 1,
+        "subtype": 0
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      }
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "per_page": 20,
+    "total": 2,
+    "total_pages": 1,
+    "has_next": false,
+    "has_previous": false
+  }
+}

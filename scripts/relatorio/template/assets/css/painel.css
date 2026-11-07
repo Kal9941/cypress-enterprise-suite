@@ -1,0 +1,532 @@
+/*
+ * Estilos próprios do painel de testes do Pharmacie Web.
+ * Complementam o styles.min.css (Tailwind já compilado, só com as classes que o
+ * relatório original usava): tudo que o relatório novo precisa e não existe lá
+ * fica aqui, em classes simples com prefixo "pn-".
+ *
+ * As cores de status valem para o CSS e para os gráficos (o charts.js lê estas
+ * variáveis), então a legenda, os selos e as barras sempre combinam.
+ */
+
+:root {
+  --c-passed: #059669;
+  --c-failed: #dc2626;
+  --c-skipped: #64748b;
+  --c-massa: #d97706;
+  --c-aviso-fundo: #fffbeb;
+  --c-aviso-borda: #fcd34d;
+  --c-aviso-texto: #92400e;
+  --c-codigo-fundo: #0f172a;
+  --c-codigo-texto: #e2e8f0;
+}
+
+.dark {
+  --c-passed: #34d399;
+  --c-failed: #f87171;
+  --c-skipped: #94a3b8;
+  --c-massa: #fbbf24;
+  --c-aviso-fundo: #3a2e0b;
+  --c-aviso-borda: #8a6a12;
+  --c-aviso-texto: #fde68a;
+  --c-codigo-fundo: #020617;
+  --c-codigo-texto: #e2e8f0;
+}
+
+/* Conteúdo escondido por filtro (funciona também em <details>) */
+.pn-oculto {
+  display: none !important;
+}
+
+/* ---------- Status: texto, fundo suave e borda ---------- */
+.pn-st-passed { --cor: var(--c-passed); }
+.pn-st-failed { --cor: var(--c-failed); }
+.pn-st-skipped { --cor: var(--c-skipped); }
+.pn-st-skippedMassa { --cor: var(--c-massa); }
+
+.pn-cor { color: var(--cor); }
+.pn-selo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.125rem 0.55rem;
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--cor) 35%, transparent);
+  background: color-mix(in srgb, var(--cor) 12%, transparent);
+  color: var(--cor);
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.pn-selo-neutro {
+  --cor: var(--muted-foreground);
+}
+.pn-ficha {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 9999px;
+  background: var(--secondary);
+  color: var(--secondary-foreground);
+  border: 1px solid var(--border);
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+a.pn-ficha:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* ---------- Cartões de totais ---------- */
+.pn-kpis {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.pn-kpi {
+  border-radius: 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--cor) 30%, transparent);
+  background: color-mix(in srgb, var(--cor) 9%, transparent);
+  padding: 0.75rem 1rem;
+}
+.pn-kpi-num {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--cor);
+}
+.pn-kpi-rotulo {
+  margin-top: 0.25rem;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.pn-kpi-sub {
+  font-size: 11px;
+  color: var(--muted-foreground);
+}
+
+/* ---------- Grades ---------- */
+.pn-grade-2 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+.pn-grade-3 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .pn-grade-2 { grid-template-columns: 1fr 1fr; }
+  .pn-grade-3 { grid-template-columns: 1fr 1fr 1fr; }
+}
+.pn-grade-2-1,
+.pn-grade-1-2 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .pn-grade-2-1 { grid-template-columns: 2fr 1fr; }
+  .pn-grade-1-2 { grid-template-columns: 1fr 2fr; }
+}
+.pn-min0 { min-width: 0; }
+
+.pn-titulo-cartao {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.pn-nota {
+  margin-top: 0.75rem;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--muted-foreground);
+}
+.pn-vazio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 8rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+}
+.pn-grafico { min-height: 16rem; }
+
+/* ---------- Faixa de informações da execução ---------- */
+.pn-info {
+  display: grid;
+  gap: 1rem 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+.pn-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+.pn-info-icone {
+  display: flex;
+  height: 2.25rem;
+  width: 2.25rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  color: var(--primary);
+}
+.pn-info-rotulo {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.pn-info-valor {
+  font-size: 0.85rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.pn-link {
+  color: var(--primary);
+}
+.pn-link:hover { text-decoration: underline; }
+
+/* ---------- Tabelas ---------- */
+.pn-tabela {
+  width: 100%;
+  font-size: 0.85rem;
+  text-align: left;
+  border-collapse: collapse;
+}
+.pn-tabela thead th {
+  padding: 0.65rem 1rem;
+  background: var(--muted);
+  color: var(--muted-foreground);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.pn-tabela tbody td {
+  padding: 0.7rem 1rem;
+  border-top: 1px solid var(--border);
+  vertical-align: middle;
+}
+.pn-tabela tbody tr:hover { background: color-mix(in srgb, var(--muted) 60%, transparent); }
+.pn-tabela .num { text-align: right; font-variant-numeric: tabular-nums; }
+.pn-ordenavel { cursor: pointer; user-select: none; }
+.pn-ordenavel:hover { color: var(--foreground); }
+.pn-divergente td { background: color-mix(in srgb, var(--c-massa) 8%, transparent); }
+.pn-celula-div { color: var(--c-massa); font-weight: 700; }
+
+/* ---------- Barra empilhada por suíte ---------- */
+.pn-barra {
+  display: flex;
+  height: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: var(--secondary);
+}
+.pn-barra > span { display: block; height: 100%; background: var(--cor); }
+.pn-legenda-mini {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.6rem;
+  margin-top: 0.3rem;
+  font-size: 10px;
+  font-weight: 600;
+}
+.pn-legenda-mini span { color: var(--cor); }
+
+/* ---------- Anel de percentual ---------- */
+.pn-anel { position: relative; display: inline-flex; height: 2.75rem; width: 2.75rem; align-items: center; justify-content: center; }
+.pn-anel svg { position: absolute; inset: 0; transform: rotate(-90deg); }
+.pn-anel b { font-size: 10px; }
+
+/* ---------- Avisos ---------- */
+.pn-aviso {
+  border: 1px solid var(--c-aviso-borda);
+  background: var(--c-aviso-fundo);
+  color: var(--c-aviso-texto);
+  border-radius: 0.6rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+}
+.pn-aviso ul { margin-top: 0.4rem; padding-left: 1.1rem; list-style: disc; }
+.pn-aviso li + li { margin-top: 0.25rem; }
+.pn-aviso-ok {
+  --c-aviso-borda: color-mix(in srgb, var(--c-passed) 40%, transparent);
+  --c-aviso-fundo: color-mix(in srgb, var(--c-passed) 10%, transparent);
+  --c-aviso-texto: var(--c-passed);
+}
+
+/* ---------- Campos de filtro ---------- */
+.pn-campo {
+  height: 2.25rem;
+  padding: 0 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--input);
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 0.8rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+}
+.pn-campo:focus-visible { outline: 2px solid var(--ring); outline-offset: 1px; }
+.pn-busca { padding-left: 2.1rem; min-width: 14rem; }
+.pn-botoes {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--muted) 50%, transparent);
+}
+.pn-filtro {
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--cor, var(--foreground));
+}
+.pn-filtro:hover { background: var(--background); }
+.pn-filtro.ativo {
+  background: var(--background);
+  border-color: var(--primary);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
+}
+.pn-botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border);
+  background: var(--background);
+  font-size: 11px;
+  font-weight: 600;
+}
+.pn-botao:hover { border-color: var(--primary); color: var(--primary); }
+
+/* ---------- Cartão de teste (<details>) ---------- */
+.pn-teste {
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--cor);
+  background: var(--card);
+  color: var(--card-foreground);
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.06);
+}
+.pn-teste > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+.pn-teste > summary::-webkit-details-marker { display: none; }
+.pn-teste > summary:hover { background: color-mix(in srgb, var(--muted) 55%, transparent); }
+.pn-teste[open] > summary { border-bottom: 1px solid var(--border); }
+.pn-teste .pn-seta { transition: transform 0.15s; color: var(--muted-foreground); }
+.pn-teste[open] .pn-seta { transform: rotate(90deg); }
+.pn-teste-id {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+  border-radius: 0.3rem;
+  background: var(--muted);
+  color: var(--foreground);
+  white-space: nowrap;
+}
+.pn-teste-titulo {
+  min-width: 0;
+  flex: 1;
+  font-size: 0.875rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.pn-teste-corpo { padding: 1rem; display: grid; gap: 1rem; }
+.pn-secao-titulo {
+  margin-bottom: 0.4rem;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.pn-linhas { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; font-size: 0.8rem; }
+
+/* ---------- Bloco de erro / código ---------- */
+.pn-erro {
+  border: 1px solid color-mix(in srgb, var(--c-failed) 35%, transparent);
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+.pn-erro-cab {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: color-mix(in srgb, var(--c-failed) 10%, transparent);
+}
+.pn-erro-cat {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--c-failed);
+}
+.pn-erro-msg {
+  padding: 0.5rem 0.75rem 0;
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+.pn-codigo {
+  margin: 0.5rem 0.75rem 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: var(--c-codigo-fundo);
+  color: var(--c-codigo-texto);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 22rem;
+  overflow: auto;
+}
+.pn-pulo {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.6rem;
+  border: 1px solid color-mix(in srgb, var(--cor) 35%, transparent);
+  background: color-mix(in srgb, var(--cor) 9%, transparent);
+  font-size: 0.8rem;
+}
+
+/* ---------- Passos ---------- */
+.pn-passos { display: grid; gap: 0.15rem; counter-reset: passo; }
+.pn-passo {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+}
+.pn-passo:nth-child(odd) { background: color-mix(in srgb, var(--muted) 45%, transparent); }
+.pn-passo-n {
+  width: 1.4rem;
+  flex-shrink: 0;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted-foreground);
+  padding-top: 0.15rem;
+}
+.pn-passo-texto { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.pn-passo-origem {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  padding: 0.05rem 0.35rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--border);
+  color: var(--muted-foreground);
+  white-space: nowrap;
+}
+.pn-passo-dur {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted-foreground);
+  white-space: nowrap;
+  padding-top: 0.15rem;
+}
+
+/* ---------- Modal ---------- */
+.pn-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgb(0 0 0 / 0.6);
+}
+.pn-modal.aberto { display: flex; }
+.pn-modal-caixa {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 64rem;
+  max-height: 90vh;
+  border-radius: 0.6rem;
+  background: var(--background);
+  color: var(--foreground);
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 0.4);
+}
+.pn-modal-cab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.pn-modal-corpo { overflow: auto; padding: 1rem; background: var(--muted); }
+.pn-modal-corpo img { max-width: 100%; height: auto; margin: 0 auto; border-radius: 0.4rem; }
+.pn-modal-corpo .pn-codigo { margin: 0; max-height: none; }
+
+/* ---------- Cabeçalho / rodapé ---------- */
+.pn-cabecalho-sub {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  opacity: 0.8;
+}
+.pn-rodape { font-size: 11px; color: var(--muted-foreground); text-align: center; }
+
+/* ---------- Gráficos: o ApexCharts herda a cor do texto ---------- */
+.apexcharts-tooltip { color: #0f172a; }
+
+/* Teste instável (passou só na 2ª tentativa) */
+:root { --c-flaky: #7c3aed; }
+.dark { --c-flaky: #a78bfa; }
+.pn-st-flaky { --cor: var(--c-flaky); }
+.pn-st-total { --cor: var(--primary); }
+.pn-tabela tfoot td { padding: 0.7rem 1rem; border-top: 1px solid var(--border); font-weight: 700; }
+.pn-tabela tfoot td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Utilitários que o styles.min.css (Tailwind compilado) não trouxe */
+.normal-case { text-transform: none; }
+.opacity-50 { opacity: 0.5; }
+.opacity-60 { opacity: 0.6; }
+.py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.space-y-3 > * + * { margin-top: 0.75rem; }
+
+/* Totais no topo da página da suíte: 3 por linha em telas largas */
+.pn-kpis-3 { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+@media (min-width: 1024px) { .pn-kpis-3 { grid-template-columns: repeat(3, 150px); } }

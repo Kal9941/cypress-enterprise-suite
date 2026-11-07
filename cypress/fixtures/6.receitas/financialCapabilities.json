@@ -1,0 +1,10 @@
+{
+  "capabilities": {
+    "can_view_customer_financial": true,
+    "can_cancel_customer_financial": true,
+    "can_register_client_credit": true,
+    "can_generate_payment_link": true,
+    "can_generate_financial_nfse": true,
+    "can_view_financial_attachments": false
+  }
+}

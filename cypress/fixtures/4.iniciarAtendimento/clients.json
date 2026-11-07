@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": 867092,
+      "name": "KLISMAM MONTEIRO",
+      "cpf_cnpj": "***.925.732-**",
+      "phone": {
+        "prefix": "62",
+        "number": "993225337",
+        "whatsapp": false
+      },
+      "phone_count": 2
+    }
+  ],
+  "total": 1
+}

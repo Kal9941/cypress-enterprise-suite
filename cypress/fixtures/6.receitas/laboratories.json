@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "id": 3,
+      "name": "LABORATORIO DE FITOTERAPIA",
+      "short_name": "FITO"
+    },
+    {
+      "id": 4,
+      "name": "LABORATORIO DE HOMEOPATIA",
+      "short_name": "HOMEOPATIA"
+    },
+    {
+      "id": 1,
+      "name": "LABORATORIO DE SEMI-SOLIDOS",
+      "short_name": "DERMATO"
+    },
+    {
+      "id": 5,
+      "name": "SEMI SOLIDOS",
+      "short_name": "SEMI SOLIDOS"
+    },
+    {
+      "id": 6,
+      "name": "SOLIDO - GUSTAVO",
+      "short_name": "SOLI-GUSTAVO"
+    },
+    {
+      "id": 2,
+      "name": "SOLIDOS",
+      "short_name": "SOLIDOS"
+    }
+  ],
+  "total": 6
+}

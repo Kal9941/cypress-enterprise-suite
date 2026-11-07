@@ -1,0 +1,362 @@
+{
+  "data": [
+    {
+      "code": 183,
+      "type": 0,
+      "group_code": 15,
+      "group_name": "CAMPANHAS FARMULA",
+      "title": "FARMULA ESMALTE FORTALECEDOR",
+      "content": "Farmula tem uma  solução para unhas curtas e quebradiças !\r\n Experimente nossa Base Fortalecedora!  \r\n\r\nSucesso de vendas, uma formula exclusiva, elaborada com ativos específicos para reconstrução e fortalecimento as unhas, estimula o crescimento  e reforça a sua resistência.\r\nSua atuação é repor nutrientes essenciais para suas unhas.\r\n\r\n Pode ser utilizado como base, junto com seu esmalte do dia a dia!\r\n-\r\nPeça já a sua fórmula.",
+      "footer_content": null,
+      "display_order": 100
+    },
+    {
+      "code": 364,
+      "type": 0,
+      "group_code": 4,
+      "group_name": "NEGOCIAÇÃO",
+      "title": "INDICAÇAO FARMACEUTICA",
+      "content": "Você tem as dosagens de cada substância ou deseja que façamos uma indicação de acordo com as dosagens usuais de cada um ?",
+      "footer_content": null,
+      "display_order": 101
+    },
+    {
+      "code": 89,
+      "type": 0,
+      "group_code": 7,
+      "group_name": "ENTREGAS / COLETAS/ RETIRAR EM LOJA",
+      "title": "BUSCAR RECEITA 1",
+      "content": "Para a manipulação do seu medicamento, necessitamos da receita original, pois contém ativos de controle especial. \r\n\r\nColetamos a receita gratuitamente. Qual o endereço para buscarmos sua receita para darmos continuidade na manipulação do seu medicamento e finalizarmos o mais rápido possivel?",
+      "footer_content": null,
+      "display_order": 102
+    },
+    {
+      "code": 73,
+      "type": 0,
+      "group_code": 6,
+      "group_name": "ORIENTAÇÃO ESPECIAL",
+      "title": "Bebida alcoolica",
+      "content": "Não recomendamos a ingestão de medicamentos em conjunto com bebidas alcoólicas.",
+      "footer_content": null,
+      "display_order": 103
+    },
+    {
+      "code": 43,
+      "type": 0,
+      "group_code": 16,
+      "group_name": "ABERTURA",
+      "title": "ENDEREÇO",
+      "content": "Informe o seu endereço por favor ?",
+      "footer_content": null,
+      "display_order": 104
+    },
+    {
+      "code": 434,
+      "type": 0,
+      "group_code": 6,
+      "group_name": "ORIENTAÇÃO ESPECIAL",
+      "title": "VENDA APENAS COM CRM",
+      "content": "Devido a uma nova Resolução emitida pela ANVISA o ativo só poderá ser vendido mediante prescrição médica(CRM).",
+      "footer_content": null,
+      "display_order": 105
+    },
+    {
+      "code": 47,
+      "type": 0,
+      "group_code": 16,
+      "group_name": "ABERTURA",
+      "title": "AJUDA MAIS",
+      "content": "Posso ajudar em mais alguma coisa ?",
+      "footer_content": null,
+      "display_order": 106
+    },
+    {
+      "code": 45,
+      "type": 0,
+      "group_code": 4,
+      "group_name": "NEGOCIAÇÃO",
+      "title": "DUVIDA",
+      "content": "Qualquer dúvida estamos a disposição!",
+      "footer_content": null,
+      "display_order": 107
+    },
+    {
+      "code": 342,
+      "type": 0,
+      "group_code": 15,
+      "group_name": "CAMPANHAS FARMULA",
+      "title": "FARMULA VERISOL - COMPOSIÇÃO",
+      "content": "O Verisol da Farmula, é o mais completo do mercado,contendo:\r\n- Verisol 2,5 G \r\n- Acido pantotênico \r\n- Vitamina C \r\n- Vitamina A \r\n- Vitamina E \r\n- Biotina \r\n\r\nE o melhor não contém lactose,açúcar, glúten e sem sabor\r\n\r\n*Seu modo de usar é tomar 1 medida do medidor em 200 ml de água ou suco,agitar e beber imediatamente.*\r\n\r\nSão 30 doses, tratamento para 1 mês ,o colágeno com o melhor custo-benefício do mercado!",
+      "footer_content": null,
+      "display_order": 108
+    },
+    {
+      "code": 402,
+      "type": 0,
+      "group_code": 7,
+      "group_name": "ENTREGAS / COLETAS/ RETIRAR EM LOJA",
+      "title": "BUSCAR RECEITA 2",
+      "content": "Confirmado Sr(a) xxxxx! Coleta será realizada xxxxx , podendo passar na rota das xxxxx até as xxxxxx! Assim que a receita chegar aos meus cuidados entrarei em contato e daremos continuidade em seu pedido.",
+      "footer_content": null,
+      "display_order": 109
+    },
+    {
+      "code": 289,
+      "type": 0,
+      "group_code": 23,
+      "group_name": "POS ORÇAMENTO",
+      "title": "ENTRE EM CONTATO",
+      "content": "Contamos com a sua preferência !\r\n\r\nEm caso de dúvida, permaneço à disposição para qualquer esclarecimento.\r\nCaso encontre outros valores,entre em contato com FARMULA. Queremos muito te atender.\r\nMuito obrigado (a) !",
+      "footer_content": null,
+      "display_order": 110
+    },
+    {
+      "code": 90,
+      "type": 0,
+      "group_code": 22,
+      "group_name": "LOCALIZAÇÃO",
+      "title": "ENDEREÇO FARMULA",
+      "content": "Segue nossa Endereço:\r\nRua 22 Qd.50 Lt.11 \r\nBairro Independencia \r\nAparecisa de Goiânia\r\nCEP:74.967-150\r\nhttps://goo.gl/maps/dAXFC1VfodcJArTK8",
+      "footer_content": null,
+      "display_order": 111
+    },
+    {
+      "code": 207,
+      "type": 0,
+      "group_code": 15,
+      "group_name": "CAMPANHAS FARMULA",
+      "title": "FARMULA SOLUÇÃO ANTIQUEDA",
+      "content": "Composição da solução antiqueda com minoxidil:\r\n\r\n- Minoxidil : ajuda a revitalizar a raiz do cabelo e normalizar o ciclo de crescimento dos fios, estimula a vascularização do couro cabeludo permitindo oxigenação da área.\r\n\r\n- Auxina tricógena: ação estimulante sobre o bulbo capilar.\r\n\r\n- Fatores de crescimento: Estimula os folículos capilares a produzirem um cabelo mais denso e forte;\r\n\r\nPosologia:\r\nPingar 20 gotas no couro cabeludo 1x ao dia (à noite) e massagear.\r\n\r\nContra- indicação\r\nLactante e gestantes;\r\nSensibilidade aos componentes da fórmula;",
+      "footer_content": null,
+      "display_order": 112
+    },
+    {
+      "code": 6,
+      "type": 0,
+      "group_code": 4,
+      "group_name": "NEGOCIAÇÃO",
+      "title": "ORÇAMENTO",
+      "content": "Seu orçamento está em andamento.Aguarde !",
+      "footer_content": null,
+      "display_order": 113
+    },
+    {
+      "code": 406,
+      "type": 0,
+      "group_code": 16,
+      "group_name": "ABERTURA",
+      "title": "INICIANDO ORÇAMENTO",
+      "content": "Olá! \r\nSeja Bem-Vindo(a)a FARMULA! \r\nSua cotação está em andamento.\r\nEnquanto isso fique a vontade para dar uma olhada em nosso tablóide.",
+      "footer_content": null,
+      "display_order": 114
+    },
+    {
+      "code": 326,
+      "type": 0,
+      "group_code": 23,
+      "group_name": "POS ORÇAMENTO",
+      "title": "NEGOCIAÇAO",
+      "content": "Tudo bem? \r\nQuero muito atende-lo (a) e farei o que estiver ao meu alcance para isso! \r\nO que falta para fecharmos o seu pedido conosco agora?",
+      "footer_content": null,
+      "display_order": 115
+    },
+    {
+      "code": 439,
+      "type": 0,
+      "group_code": 7,
+      "group_name": "ENTREGAS / COLETAS/ RETIRAR EM LOJA",
+      "title": "BUSCAR RECEITA 3",
+      "content": "Coletamos gratuitamente a sua receita no endereço de sua preferência.",
+      "footer_content": null,
+      "display_order": 116
+    },
+    {
+      "code": 164,
+      "type": 0,
+      "group_code": 16,
+      "group_name": "ABERTURA",
+      "title": "INTRODUTORIO",
+      "content": "Segue o orçamento solicitado, validade por 5 dias !",
+      "footer_content": "Vamos concluir seu pedido e iniciar seu tratamento?\r\n  FARMULA - 20 ANOS DE EXPERIÊNCIA EM MANIPULAÇÃO",
+      "display_order": 117
+    },
+    {
+      "code": 253,
+      "type": 0,
+      "group_code": 23,
+      "group_name": "POS ORÇAMENTO",
+      "title": "CHAMANDO 1",
+      "content": "O que falta para concluirmos o seu pedido e iniciar o seu tratamento?\r\n Queremos muito te atender!",
+      "footer_content": null,
+      "display_order": 118
+    },
+    {
+      "code": 262,
+      "type": 0,
+      "group_code": 5,
+      "group_name": "AGRADECIMENTOS",
+      "title": "Agradecimento",
+      "content": "A Farmula agradece a confiança! Em sua próxima prescrição me dê preferência, será uma satisfação lhe atender novamente!",
+      "footer_content": null,
+      "display_order": 119
+    },
+    {
+      "code": 336,
+      "type": 0,
+      "group_code": 15,
+      "group_name": "CAMPANHAS FARMULA",
+      "title": "FARMULA  IMUNE",
+      "content": "Aliando as forças com Vit C + Vit D + Zinco junto com Própolis + Açafrão + Gengibre, entre outros, Terá um grande complexo imune estimulante para você.\r\nUm conjunto que irá melhorar o desempenho e a maior eficiência dos seus sistemas de defesa. Combate a infecções como gripes e resfriados, assim como infecções virais, bacterianas, entre outras.\r\n\r\nReúne o que há de melhor na natureza com o intuito de fortalecer sistema imunológico.",
+      "footer_content": null,
+      "display_order": 120
+    },
+    {
+      "code": 152,
+      "type": 0,
+      "group_code": 16,
+      "group_name": "ABERTURA",
+      "title": "DUVIDAS",
+      "content": "Ficou alguma dúvida, podemos concluir o seu pedido e dar inicio ao seu tratamento ? Gostaria muito em te atender!",
+      "footer_content": null,
+      "display_order": 121
+    },
+    {
+      "code": 104,
+      "type": 0,
+      "group_code": 23,
+      "group_name": "POS ORÇAMENTO",
+      "title": "CHAMANDO 2",
+      "content": "Olá! \r\nEntro em contato para darmos continuidade em seu orçamento e finalizar seu pedido.\r\nExiste alguma dúvida ? Queremos muito te atender!",
+      "footer_content": null,
+      "display_order": 122
+    },
+    {
+      "code": 392,
+      "type": 0,
+      "group_code": 23,
+      "group_name": "POS ORÇAMENTO",
+      "title": "CHAMANDO 3",
+      "content": "Olá! \r\nVamos manipular suas fórmulas? Estou aqui à sua disposição. \r\nAguardamos seu contato.",
+      "footer_content": null,
+      "display_order": 123
+    },
+    {
+      "code": 422,
+      "type": 0,
+      "group_code": 23,
+      "group_name": "POS ORÇAMENTO",
+      "title": "SUPERVISORA DE VENDAS",
+      "content": "Olá !\r\n\r\nMeu nome é STEFFANY, sou supervisora de vendas da FARMULA. Verifiquei que temos 1 orçamento pendente!! Gostaria de saber o que posso fazer para fechar conosco e iniciar seu tratamento?\r\n\r\nQuero muito te atender!",
+      "footer_content": null,
+      "display_order": 124
+    },
+    {
+      "code": 106,
+      "type": 0,
+      "group_code": 5,
+      "group_name": "AGRADECIMENTOS",
+      "title": "OBRIGADA POR ESCOLHER A FARMULA",
+      "content": "Obrigada por escolher a FARMULA. Será uma satisfação atendê-lo(a) novamente!",
+      "footer_content": null,
+      "display_order": 125
+    },
+    {
+      "code": 458,
+      "type": 0,
+      "group_code": 5,
+      "group_name": "AGRADECIMENTOS",
+      "title": "SOMOS GRATOS",
+      "content": "Somos gratos pela nossa parceria,você é muito importante para nós.\r\nObrigada pela preferência!",
+      "footer_content": null,
+      "display_order": 126
+    },
+    {
+      "code": 76,
+      "type": 0,
+      "group_code": 5,
+      "group_name": "AGRADECIMENTOS",
+      "title": "Felizes com o seu contato",
+      "content": "Ficamos muito felizes com o seu contato! Será um satisfação atendê-lo(a) novamente!",
+      "footer_content": null,
+      "display_order": 127
+    },
+    {
+      "code": 151,
+      "type": 0,
+      "group_code": 5,
+      "group_name": "AGRADECIMENTOS",
+      "title": "FARMULA AGRADECE, BOM DIA !",
+      "content": "A FARMULA agradece pelo contato, tenha um excelente dia!",
+      "footer_content": null,
+      "display_order": 128
+    },
+    {
+      "code": 299,
+      "type": 0,
+      "group_code": 5,
+      "group_name": "AGRADECIMENTOS",
+      "title": "AGRADECIMENTO - PREFERENCIA",
+      "content": "Sr XXXXX ,são por pessoas como você que sempre nos dedicamos em aperfeiçoar nosso trabalho.\r\nSua satisfação é muito importante para nós! \r\nAgradeço muito por ser nosso cliente!",
+      "footer_content": null,
+      "display_order": 129
+    },
+    {
+      "code": 440,
+      "type": 0,
+      "group_code": 5,
+      "group_name": "AGRADECIMENTOS",
+      "title": "AGRADECIMENTO - ESCOLHA",
+      "content": "Muito obrigada! A FARMULA agradece ser a sua escolha!\r\nEm sua próxima prescrição nos dê preferência.\r\nSerá uma satisfação te atender novamente.\r\n\r\nTenha um excelente dia!!!",
+      "footer_content": null,
+      "display_order": 130
+    },
+    {
+      "code": 446,
+      "type": 0,
+      "group_code": 5,
+      "group_name": "AGRADECIMENTOS",
+      "title": "AGRADECIMENTO - CONFIANÇA",
+      "content": "Sr (a) XXXXX,obrigada por confiar em nossa farmácia e por confiar no meu trabalho.Saiba que servir você cada vez melhor é meu compromisso daqui pra frente.",
+      "footer_content": null,
+      "display_order": 131
+    },
+    {
+      "code": 279,
+      "type": 0,
+      "group_code": 5,
+      "group_name": "AGRADECIMENTOS",
+      "title": "FINALIZAÇÃO DO PEDIDO",
+      "content": "Fico feliz em saber que você confia em nosso trabalho, Tenha a certeza que receberá os melhores produtos em sua casa",
+      "footer_content": null,
+      "display_order": 132
+    },
+    {
+      "code": 451,
+      "type": 0,
+      "group_code": 26,
+      "group_name": "TELEFONES",
+      "title": "NÃO RECEBEMOS CHAMADAS",
+      "content": "Nosso sistema de atendimento via Whatsap é um aplicativo comercial por computador, não tendo a função atender chamadas.",
+      "footer_content": null,
+      "display_order": 133
+    },
+    {
+      "code": 257,
+      "type": 0,
+      "group_code": 17,
+      "group_name": "OBJEÇÕES DE VENDA",
+      "title": "Mensagens recebidas",
+      "content": "Olá, boa tarde ! Com o intuito de melhorar o nosso atendimento, por gentileza, as mensagens estão chegando pra você ?",
+      "footer_content": null,
+      "display_order": 134
+    }
+  ],
+  "pagination": {
+    "page": 2,
+    "per_page": 100,
+    "total": 135,
+    "total_pages": 2,
+    "has_next": false,
+    "has_previous": true
+  }
+}

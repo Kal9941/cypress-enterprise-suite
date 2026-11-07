@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "unit": "GDU",
+      "description": "UNID. ENZIMATICA BROMELINA"
+    },
+    {
+      "unit": "GRAO",
+      "description": "UNID. ENZIMA. EXTRATO TYREOIDE"
+    },
+    {
+      "unit": "GalU",
+      "description": "UNID. ENZIMATICA GALACTOSIDASE"
+    },
+    {
+      "unit": "KG",
+      "description": "KG"
+    },
+    {
+      "unit": "PG",
+      "description": "UNID. ENZIMATICA PECTINASE"
+    },
+    {
+      "unit": "g",
+      "description": "GRAMA"
+    },
+    {
+      "unit": "gt",
+      "description": "GOTAS"
+    },
+    {
+      "unit": "kg",
+      "description": "KILOGRAMA"
+    },
+    {
+      "unit": "mcg",
+      "description": "MICROGRAMA"
+    },
+    {
+      "unit": "mg",
+      "description": "MILIGRAMA"
+    },
+    {
+      "unit": "qsp(g)",
+      "description": "GRAMA QSP"
+    },
+    {
+      "unit": "qsp(gt)",
+      "description": "GOTAS QSP"
+    },
+    {
+      "unit": "qsp(mg)",
+      "description": "MILIGRAMA QSP"
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "per_page": 50,
+    "total": 13,
+    "total_pages": 1,
+    "has_next": false,
+    "has_previous": false
+  }
+}

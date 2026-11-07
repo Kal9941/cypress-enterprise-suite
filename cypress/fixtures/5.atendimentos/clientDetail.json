@@ -1,0 +1,99 @@
+{
+  "id": 867092,
+  "name": "KLISMAM MONTEIRO",
+  "label_name": "KLISMAM MONTEIRO",
+  "person_type": 1,
+  "document": "01992573298",
+  "identity_document": "RG1790356452514",
+  "issuing_body": "SSP",
+  "issuing_body_uf": "GO",
+  "gender": 1,
+  "birth_date": "1994-09-26",
+  "group": {
+    "id": 800000,
+    "name": "GRUPO GERAL - CLIENTE"
+  },
+  "active": true,
+  "in_debt": false,
+  "email": "klismammonteiro1994@gmail.com",
+  "tax": {
+    "non_taxpayer": false,
+    "final_consumer": true,
+    "withhold_iss": false
+  },
+  "discount": {
+    "type": 1,
+    "percentage": 0
+  },
+  "classification": {
+    "movement": null,
+    "post_sale": null,
+    "price_table_id": null
+  },
+  "delivery": {
+    "free_delivery": false
+  },
+  "notes": {
+    "client": "Observação E2E 1790186246752",
+    "weighing": null,
+    "attendance": null
+  },
+  "phones": [
+    {
+      "id": 1260307,
+      "prefix": "62",
+      "number": "993225337",
+      "whatsapp": false,
+      "primary": true,
+      "phone_type": 2,
+      "description": null
+    },
+    {
+      "id": 1260308,
+      "prefix": "91",
+      "number": "983012072",
+      "whatsapp": false,
+      "primary": false,
+      "phone_type": 3,
+      "description": null
+    }
+  ],
+  "addresses": [
+    {
+      "id": 928017,
+      "primary": true,
+      "invoice": true,
+      "zip_code": "74610030",
+      "street": "Decima primeira avenida",
+      "number": "297",
+      "complement": "Edificio Le monde, Apt 106",
+      "description": "Endereco Teste E2E 1790356476152",
+      "neighborhood": {
+        "id": 106,
+        "name": "SETOR LESTE UNIVERSITARIO"
+      },
+      "city": {
+        "id": 33,
+        "name": "GOIANIA",
+        "state": "GO"
+      }
+    }
+  ],
+  "animals": [],
+  "capabilities": {
+    "can_update_client": true,
+    "can_deactivate_client": true,
+    "can_change_client_name": true,
+    "can_change_label_name": true,
+    "can_change_debt_status": true,
+    "can_change_discount_type": true,
+    "can_change_discount_percentage": true,
+    "can_change_free_delivery": true,
+    "can_change_weighing_notes": true,
+    "can_view_hidden_lgpd_data": false
+  },
+  "audit": {
+    "created_at": "2026-08-13T11:40:27Z",
+    "updated_at": "2026-09-25T17:14:32.722200Z"
+  }
+}

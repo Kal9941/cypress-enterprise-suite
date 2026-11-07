@@ -1,0 +1,92 @@
+{
+  "1": [
+    {
+      "id": 1,
+      "name": "CREMES / MASCARAS",
+      "lab_id": 1,
+      "stock_id": 4
+    },
+    {
+      "id": 3,
+      "name": "GOMAS/ CHOCOLATES",
+      "lab_id": 1,
+      "stock_id": 5
+    }
+  ],
+  "2": [
+    {
+      "id": 64,
+      "name": "CAPSULA OLEOSA PRONTA",
+      "lab_id": 2,
+      "stock_id": 1
+    },
+    {
+      "id": 2,
+      "name": "CAPSULAS",
+      "lab_id": 2,
+      "stock_id": 4
+    },
+    {
+      "id": 63,
+      "name": "CAPSULAS DUO",
+      "lab_id": 2,
+      "stock_id": 4
+    },
+    {
+      "id": 40,
+      "name": "CPS CLOROFILA",
+      "lab_id": 2,
+      "stock_id": 4
+    },
+    {
+      "id": 42,
+      "name": "CPS GASTRO",
+      "lab_id": 2,
+      "stock_id": 4
+    },
+    {
+      "id": 51,
+      "name": "CPS OLEOSAS",
+      "lab_id": 2,
+      "stock_id": 4
+    },
+    {
+      "id": 54,
+      "name": "CPS PALATAVEIS VETERINARIA CARNE",
+      "lab_id": 2,
+      "stock_id": 4
+    },
+    {
+      "id": 29,
+      "name": "CPS SUBLINGUAIS",
+      "lab_id": 2,
+      "stock_id": 4
+    },
+    {
+      "id": 50,
+      "name": "CPS TAPIOCA",
+      "lab_id": 2,
+      "stock_id": 4
+    },
+    {
+      "id": 47,
+      "name": "MINI CAPSULAS VET",
+      "lab_id": 2,
+      "stock_id": 4
+    }
+  ],
+  "3": [
+    {
+      "id": 7,
+      "name": "ENVELOPES/SACHÊ",
+      "lab_id": 3,
+      "stock_id": 4
+    },
+    {
+      "id": 6,
+      "name": "PÓS/SHAKES",
+      "lab_id": 3,
+      "stock_id": 4
+    }
+  ]
+}

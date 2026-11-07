@@ -1,0 +1,36 @@
+{
+  "name": "cypress-enterprise-suite",
+  "version": "1.0.0",
+  "description": "Enterprise E2E (Cypress v15) & Load Testing (k6) Automation Framework with Mock Strategy and AI Agent Governance",
+  "scripts": {
+    "postinstall": "patch-package",
+    "test": "cypress run --browser chrome",
+    "cypress:open": "cypress open --browser chrome",
+    "cypress:run": "cypress run --browser chrome",
+    "k6:login": "k6 run performance/1.login-api-load.js",
+    "k6:central": "k6 run performance/2.central-api-load.js",
+    "k6:iniciar-atendimento": "k6 run performance/3.iniciarAtendimento-api-load.js",
+    "k6:atendimentos": "k6 run performance/4.atendimentos-api-load.js",
+    "scan:elements": "node scripts/scan-frontend-elements.js",
+    "audit:routes": "node scripts/audit-backend-routes.js",
+    "audit:routes:live": "node scripts/audit-backend-routes.js --live",
+    "schema:drift": "node scripts/schema-drift.js",
+    "docs:lint": "node scripts/lint-agents.js",
+    "test:remote": "node scripts/test-remote.js",
+    "relatorio": "node scripts/relatorio/gerar-relatorio.js"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^26.0.0",
+    "@faker-js/faker": "^10.5.0",
+    "cypress": "^15.20.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-multi-reporters": "^2.0.5",
+    "dotenv": "^17.4.2",
+    "mocha-junit-reporter": "^2.2.1",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "patch-package": "^8.0.1",
+    "playwright-webkit": "^1.62.1",
+    "zod": "^3.25.76"
+  }
+}

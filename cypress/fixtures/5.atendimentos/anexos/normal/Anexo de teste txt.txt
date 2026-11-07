@@ -1,0 +1,26 @@
+Bom dia a todos,
+ 
+Segue o novo padrão de abertura de OS definidos com os líderes de cada departamento:
+ 
+O.S. Nº: XXXXXXX - Urgência (se aplicável)
+ 
+Contexto:
+Explica o cenário, o fluxo que o usuário estava realizando e os dados/ambiente envolvidos antes do problema ocorrer (o ponto de partida e o objetivo da ação).
+ 
+Comportamento Observado:
+Descreve o erro que realmente aconteceu (o defeito, mensagem de erro, crash, lentidão ou divergência visual constatada).
+ 
+Comportamento Esperado:
+Define o que deveria ter acontecido se o sistema funcionasse perfeitamente de acordo com as regras de negócio e requisitos técnicos.
+ 
+Tela/Processo:
+Tela: Código - nome
+ 
+Versão: 
+Versão testada no ps_atu e versão testada no cliente.
+ 
+Dados para teste:
+- Backup do cliente.
+- códigos do processo que deu erro: código da receita, revenda, financeiro.
+- Relatório ou consulta: parâmetros (filtros).
+

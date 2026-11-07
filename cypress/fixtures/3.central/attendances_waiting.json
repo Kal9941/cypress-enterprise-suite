@@ -1,0 +1,215 @@
+{
+  "items": [
+    {
+      "id": 260900069,
+      "reference_at": "2026-09-17T15:29:32.993Z",
+      "attendant_name": "FABRICIO MARQUES",
+      "customer_name": "+55 62 9355-1486",
+      "customer_phone": "556293551486",
+      "messages": {
+        "unread_count": 2,
+        "last_message": {
+          "type": 0,
+          "content_type": "text",
+          "body": "oi",
+          "occurred_at": "2026-09-17T18:20:53.140Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 3,
+        "name": "WHATSAPP NAO OFICIAL - 4001",
+        "type": 1,
+        "subtype": 0
+      },
+      "group": {
+        "id": 1,
+        "name": "BALCAO"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900076,
+      "reference_at": "2026-09-17T19:19:15.294Z",
+      "attendant_name": "ITALO PATRICK",
+      "customer_name": "+55 62 9656-6248",
+      "customer_phone": "556296566248",
+      "messages": {
+        "unread_count": 11,
+        "last_message": {
+          "type": 1,
+          "content_type": "text",
+          "body": "Entrega para João Ricardo",
+          "occurred_at": "2026-09-21T13:26:40.013Z"
+        }
+      },
+      "status": 0,
+      "custom_status": null,
+      "channel": {
+        "id": 3,
+        "name": "WHATSAPP NAO OFICIAL - 4001",
+        "type": 1,
+        "subtype": 0
+      },
+      "group": {
+        "id": 1,
+        "name": "BALCAO"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900077,
+      "reference_at": "2026-09-17T19:29:42.142Z",
+      "attendant_name": "FABRICIO MARQUES",
+      "customer_name": "Rafaela Mendonça",
+      "customer_phone": "5588998618405",
+      "messages": {
+        "unread_count": 1,
+        "last_message": {
+          "type": 1,
+          "content_type": "text",
+          "body": "Não recebemos nenhum anexo. Caso ainda não tenha feito, você pode solicitar seu orçamento por meio de uma mensagem de texto ou de voz.",
+          "occurred_at": "2026-09-17T19:29:42.256Z"
+        }
+      },
+      "status": 0,
+      "custom_status": null,
+      "channel": {
+        "id": 1,
+        "name": "PEDIDO PAGO - CHATBOT",
+        "type": 1,
+        "subtype": 2
+      },
+      "group": {
+        "id": 6,
+        "name": "CHATBOT"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900078,
+      "reference_at": "2026-09-17T19:32:10.908Z",
+      "attendant_name": "HENRIQUE",
+      "customer_name": "5588998618405",
+      "customer_phone": "5588998618405",
+      "messages": {
+        "unread_count": 1,
+        "last_message": {
+          "type": 1,
+          "content_type": "text",
+          "body": "Blow Gummies\nA escolha certa.\nOpções:\n1. Colocar no carrinho\n2. Saber mais\n3. Não tenho interesse",
+          "occurred_at": "2026-09-17T19:32:12.400Z"
+        }
+      },
+      "status": 0,
+      "custom_status": null,
+      "channel": {
+        "id": 1,
+        "name": "PEDIDO PAGO - CHATBOT",
+        "type": 1,
+        "subtype": 2
+      },
+      "group": {
+        "id": 6,
+        "name": "CHATBOT"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900090,
+      "reference_at": "2026-09-21T12:23:37.745Z",
+      "attendant_name": "COMERCIAL",
+      "customer_name": "KLISMAM MONTEIRO",
+      "customer_phone": "556293225337",
+      "messages": {
+        "unread_count": 1,
+        "last_message": {
+          "type": 1,
+          "content_type": "text",
+          "body": "Continuar",
+          "occurred_at": "2026-09-21T17:49:43.113Z"
+        }
+      },
+      "status": 1,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900091,
+      "reference_at": "2026-09-21T18:31:02.074Z",
+      "attendant_name": "JEFERSON MARTINS",
+      "customer_name": "DAYANE",
+      "customer_phone": "6235863091",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 1,
+          "content_type": "text",
+          "body": "# Arquivo nº: 984\rReceita nº: 260900257 processada pela I.A.!",
+          "occurred_at": "2026-09-21T18:32:05.138Z"
+        }
+      },
+      "status": 0,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      },
+      "completed_at": null
+    },
+    {
+      "id": 260900089,
+      "reference_at": "2026-09-20T00:16:21.783Z",
+      "attendant_name": "KLISMAMMONTEIRO",
+      "customer_name": "PABLO",
+      "customer_phone": "556282264220",
+      "messages": {
+        "unread_count": 0,
+        "last_message": {
+          "type": 1,
+          "content_type": "text",
+          "body": "# Arquivo nº: 981\rReceita nº: 260900234 processada pela I.A.!",
+          "occurred_at": "2026-09-20T00:16:21.783Z"
+        }
+      },
+      "status": 0,
+      "custom_status": null,
+      "channel": {
+        "id": 6,
+        "name": "WHATSAPP OFICIAL - 62 98222-4382",
+        "type": 1,
+        "subtype": 1
+      },
+      "group": {
+        "id": 7,
+        "name": "ATENDIMENTO"
+      },
+      "completed_at": null
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "per_page": 7,
+    "total": 19,
+    "total_pages": 3,
+    "has_next": true,
+    "has_previous": false
+  }
+}

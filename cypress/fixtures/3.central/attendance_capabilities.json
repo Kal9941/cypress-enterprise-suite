@@ -1,0 +1,17 @@
+{
+  "capabilities": {
+    "can_access_attendance_module": true,
+    "can_create_attendance": true,
+    "can_view_pending_attendance": true,
+    "can_view_occupied_attendance": true,
+    "can_create_customer_without_gender": false,
+    "can_list_group_agents": true,
+    "can_change_attendant_status": true,
+    "can_create_attendance_custom_status": true,
+    "can_update_attendance_custom_status": true,
+    "can_customize_budget": true,
+    "can_add_movement": true,
+    "can_remove_movement": true,
+    "can_transfer_omni_movement": true
+  }
+}
