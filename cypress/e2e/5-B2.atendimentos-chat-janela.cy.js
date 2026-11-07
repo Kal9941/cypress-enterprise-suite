@@ -997,7 +997,7 @@ describe('5-B2. Atendimentos - Chat: Janela 24h, Templates, Busca, Legenda e Per
           customer: {
             customer_id: 867093,
             name: "CLIENTE SEM INBOUND",
-            phone: "5562993225338",
+            phone: "5511999998889",
             email: null,
             store_name: "LOJA TESTE"
           },

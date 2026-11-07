@@ -1207,7 +1207,7 @@ class AtendimentosMocks extends BaseMock {
     // 1. Detalhe do atendimento — customer.customer_id AUSENTE (pré-condição do item "Vincular cliente")
     const detailPayload = {
       attendance: { ...this.mockAttendanceDetailData.attendance, id: idNum },
-      customer: { name: null, phone: '5562993220000', email: null, store_name: 'LOJA TESTE' },
+      customer: { name: null, phone: '5511999990000', email: null, store_name: 'LOJA TESTE' },
       summaries: { quotes: { count: 0, total_amount: 0 }, payment_links: { count: 0, pending_confirmation_count: 0 } },
       capabilities: itemCapabilities
     };
