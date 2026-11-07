@@ -4,8 +4,8 @@
  * Tudo que vem do modelo passa por esc() antes de virar HTML.
  */
 
-const TITULO = 'Pharmacie Web — Relatório de testes E2E';
-const CHAVE_TEMA = 'pharmacie-relatorio-tema';
+const TITULO = 'OmniCare Web — Relatório de testes E2E';
+const CHAVE_TEMA = 'omnicare-relatorio-tema';
 
 const STATUS = ['passed', 'failed', 'skipped', 'skippedMassa'];
 const ROTULOS = {

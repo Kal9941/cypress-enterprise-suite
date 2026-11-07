@@ -9,7 +9,7 @@ $brush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::White)
 $fontTitle = New-Object System.Drawing.Font('Arial', 28, [System.Drawing.FontStyle]::Bold)
 $fontSub = New-Object System.Drawing.Font('Arial', 18)
 
-$g.DrawString('Pharmacie Web - Anexo E2E', $fontTitle, $brush, 60, 180)
+$g.DrawString('OmniCare Web - Anexo E2E', $fontTitle, $brush, 60, 180)
 $g.DrawString('Imagem de Teste de Upload - WhatsApp Oficial', $fontSub, $brush, 60, 240)
 
 $rect = New-Object System.Drawing.Rectangle 60, 300, 680, 180

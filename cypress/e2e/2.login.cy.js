@@ -4,7 +4,7 @@ import CentralPage from '../pages/3.centralPage';
 import CentralMocks from '../mocks/3.centralMocks';
 import { rotaApi } from '../support/rotaApi';
 
-describe('2. Tela de login - Pharmacie web', () => {
+describe('2. Tela de login - OmniCare Web', () => {
 
   beforeEach(() => {
     cy.clearCookies();
@@ -337,10 +337,10 @@ describe('2. Tela de login - Pharmacie web', () => {
       }
 
       cy.window().then((win) => {
-        const tokenAtual = win.sessionStorage.getItem('pharmacie_access_token');
+        const tokenAtual = win.sessionStorage.getItem('omnicare_access_token');
         cy.visit('/', {
           onBeforeLoad(w) {
-            w.sessionStorage.setItem('pharmacie_access_token', `${tokenAtual}_invalido_e2e`);
+            w.sessionStorage.setItem('omnicare_access_token', `${tokenAtual}_invalido_e2e`);
           }
         });
       });
@@ -372,10 +372,10 @@ describe('2. Tela de login - Pharmacie web', () => {
       cy.intercept('GET', rotaApi('resources*'), (req) => req.continue()).as('getResourcesDuranteBoot');
 
       cy.window().then((win) => {
-        const tokenAtual = win.sessionStorage.getItem('pharmacie_access_token');
+        const tokenAtual = win.sessionStorage.getItem('omnicare_access_token');
         cy.visit('/', {
           onBeforeLoad(w) {
-            w.sessionStorage.setItem('pharmacie_access_token', `${tokenAtual}_invalido_e2e`);
+            w.sessionStorage.setItem('omnicare_access_token', `${tokenAtual}_invalido_e2e`);
           }
         });
       });
@@ -401,7 +401,7 @@ describe('2. Tela de login - Pharmacie web', () => {
     });
 
     function tokenSessao() {
-      return cy.window().then((win) => win.sessionStorage.getItem('pharmacie_access_token'));
+      return cy.window().then((win) => win.sessionStorage.getItem('omnicare_access_token'));
     }
 
     function validarTelaDeErroExibida() {

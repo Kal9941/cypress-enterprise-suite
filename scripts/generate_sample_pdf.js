@@ -6,7 +6,7 @@ function createValidPdf(filePath) {
 `BT
 /F1 24 Tf
 50 720 Td
-(Pharmacie Web - Documento E2E) Tj
+(OmniCare Web - Documento E2E) Tj
 /F1 14 Tf
 0 -40 Td
 (Este documento PDF contem conteudo real e visualizavel.) Tj

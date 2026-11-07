@@ -3329,7 +3329,7 @@ describe('0-C. Backend: Receitas (API Real)', () => {
     // `PASSIFLORA EXTRATO SECO`. A #628 tinha tornado as outras buscas insensíveis a acento e deixado esta pendente. O script v014 (v016 na rotina de atualização) põe `COLLATE WIN_PTBR`
     // nos dois modos; o código da API não muda. Efeito colateral aceito: a procedure é compartilhada, então o desktop também ignora acento e o `starting` deixa de diferenciar caixa.
     // Medido na dev em 2026-10-19: `containing` com `passiflora`, `passiflóra`, `PASSIFLORA` e `Passiflóra` → os mesmos 7 produtos; `starting` → os mesmos 6; `solução` e `solucao` → 67.
-    // Só vale onde o script foi aplicado (a dev; os bancos dos clientes recebem depois da pharmacie-script-runner-aws #31), por isso a massa tem precondição 🔒. Só leitura.
+    // Só vale onde o script foi aplicado (a dev; os bancos dos clientes recebem depois da OmniCare-script-runner-aws #31), por isso a massa tem precondição 🔒. Só leitura.
     // Fora do teste: o limite de tempo (até 10% acima do atual) é medida de desempenho com muito ruído de rede, sem asserção (a PR relata 339 ms contra 357 ms de uma consulta vazia).
     const TIMEOUT_ROTA = { timeout: 90000 };
     const VARIACOES = ['passiflora', 'passiflóra', 'PASSIFLORA', 'Passiflóra'];

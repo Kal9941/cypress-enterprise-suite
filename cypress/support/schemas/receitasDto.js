@@ -1,5 +1,5 @@
 /**
- * DTOs de resposta das rotas de receita, copiados do front (omnicare-org/pharmacie-front, branch developer, commit ff2267ea0b,
+ * DTOs de resposta das rotas de receita, copiados do front (omnicare-org/omnicare-front, branch developer, commit ff2267ea0b,
  * `src/features/prescription/domain/*.dto.ts`) — ROADMAP P2-16, onda 1 (decisão do operador, 2026-11-06).
  * O front passa cada resposta por `zodResponseParser(<Dto>Schema)` (`infra/*.endpoints.ts`): um mock fora deste contrato faz a tela
  * cair no erro genérico, longe do intercept que o causou. Validar o mock com o mesmo schema acusa o problema na montagem do intercept.

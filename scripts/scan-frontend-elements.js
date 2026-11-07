@@ -1,6 +1,6 @@
 /**
  * Scanner Estático de Elementos de Interface do Frontend
- * Pharmacie Web - Automação Cypress
+ * OmniCare Web - Automação Cypress
  *
  * Faz download do HTML inicial e dos chunks JavaScript (/assets/*.js)
  * servidos em produção/homologação, cataloga todos os data-testid,
@@ -43,7 +43,7 @@ function fetchUrl(targetUrl, maxRedirects = 5) {
 
     const req = client.get(targetUrl, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Pharmacie-Element-Scanner/1.0',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) OmniCare-Element-Scanner/1.0',
         'Accept': '*/*'
       }
     }, (res) => {
@@ -182,7 +182,7 @@ function extrairSeletoresDeCodigo(codigoJs) {
 
 async function run() {
   console.log('===============================================================');
-  console.log('🔍 SCANNER ESTÁTICO DE ELEMENTOS DE FRONTEND (PHARMACIE WEB)');
+  console.log('🔍 SCANNER ESTÁTICO DE ELEMENTOS DE FRONTEND (OmniCare Web)');
   console.log('===============================================================');
   console.log(`🌐 URL Alvo: ${baseUrl}`);
   console.log('Baixando index.html...');

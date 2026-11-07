@@ -700,7 +700,7 @@ describe('5-B1. Atendimentos - Chat: Componentes, Anexos e Colagem', () => {
 
     it('1.27 deve permitir marcar um orçamento concluído (status -1) sem financeiro e sem cobertura para o link de pagamento (Issue front#492/backend#562/#583)', () => {
       // 1. Arrange: Cenário 100% mockado com orçamento concluído #260900100 (status -1, sem financial_id,
-      // covered_by_approved_link: false) — antes da PR #495/pharmacie-front, isBudgetOpenForPaymentLink
+      // covered_by_approved_link: false) — antes da PR #495/omnicare-front, isBudgetOpenForPaymentLink
       // aceitava só status === 0, recusando com a dica "Só orçamento em aberto..."
       AtendimentosMocks.interceptMockBudgetsElegibilidadeStatusConcluido('*');
 

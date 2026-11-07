@@ -4,7 +4,7 @@
  * antes de pintar (evita o "pisca"); aqui só se cuida do botão e dos gráficos.
  */
 window.ReportTheme = {
-  CHAVE: 'pharmacie-relatorio-tema',
+  CHAVE: 'omnicare-relatorio-tema',
 
   init: () => {
     const botao = document.getElementById('theme-toggle');

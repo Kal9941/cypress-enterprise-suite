@@ -1080,13 +1080,13 @@ describe('5-A. Atendimentos - Fila e Status', () => {
               id: idOutroOperador,
               name: nomeOutroOperador,
               status: 'available',
-              email: 'italo@pharmacie.com.br'
+              email: 'agent@omnicare.local'
             },
             {
               id: idOperadorLogado,
               name: nomeOperadorProfile,
               status: statusDinamicoOperador,
-              email: 'operador@pharmacie.com.br'
+              email: 'operator@omnicare.local'
             }
           ];
           req.reply({ statusCode: 200, body: payload });

@@ -1,7 +1,7 @@
 import { validarSchemaMock } from '../support/schemas';
 
 /**
- * Classe Base para a Gestão de Mocks e Interceptações do Pharmacie Web.
+ * Classe Base para a Gestão de Mocks e Interceptações do OmniCare Web.
  *
  * Implementa o Strategy Pattern para gerenciar a alternância entre:
  * 1. Modo 100% Mock (USE_MOCKS: true): responde instantaneamente com a fixture local (req.reply).

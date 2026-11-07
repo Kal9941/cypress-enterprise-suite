@@ -76,7 +76,7 @@ class NetworkRecorder {
     this.isRecording = true;
     this.isReplaying = false;
 
-    // Intercepta chamadas relevantes para a API REST da Pharmacie consumindo dinamicamente a API_URL
+    // Intercepta chamadas relevantes para a API REST da OmniCare consumindo dinamicamente a API_URL
     const apiUrl = Cypress.env('API_URL') || 'https://api.omnicare.dev.local';
     const interceptPattern = apiUrl.endsWith('/') ? `${apiUrl}**` : `${apiUrl}/**`;
 
@@ -95,8 +95,8 @@ class NetworkRecorder {
         return;
       }
 
-      // Se for uma requisição para a API da Pharmacie
-      if (url.includes('api.pharmacie') || url.includes('/stores/') || url.includes('/users/') || url.includes('/auth/')) {
+      // Se for uma requisição para a API da OmniCare
+      if (url.includes('api.OmniCare') || url.includes('/stores/') || url.includes('/users/') || url.includes('/auth/')) {
         const startTime = Date.now();
         const requestEntry = {
           order: this.sessionTimeline.length + 1,
@@ -184,7 +184,7 @@ class NetworkRecorder {
           const url = req.url;
           const apiUrl = Cypress.env('API_URL');
           const isApiUrl = apiUrl && url.startsWith(apiUrl);
-          if (!isApiUrl && !url.includes('api.pharmacie') && !url.includes('/stores/') && !url.includes('/users/') && !url.includes('/auth/')) {
+          if (!isApiUrl && !url.includes('api.OmniCare') && !url.includes('/stores/') && !url.includes('/users/') && !url.includes('/auth/')) {
             return;
           }
 

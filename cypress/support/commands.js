@@ -98,7 +98,7 @@ Cypress.Commands.add('login', (
         validate() {
           // Valida se a sessão contém token e o usuário permanece autenticado
           cy.window().then((win) => {
-            const token = win.sessionStorage.getItem('pharmacie_access_token');
+            const token = win.sessionStorage.getItem('omnicare_access_token');
             expect(token).to.be.a('string').and.not.be.empty;
           });
         }

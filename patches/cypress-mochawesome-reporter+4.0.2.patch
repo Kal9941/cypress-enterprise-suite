@@ -15,7 +15,7 @@ index 0fdf5f6..78461c8 100644
      return convertImg(imgPath);
    }
 
-+  // PATCH (pharmacie-web, 2026-09-29): screenshot referenciado no .json não existe mais em disco
++  // PATCH (OmniCare-web, 2026-09-29): screenshot referenciado no .json não existe mais em disco
 +  // (achado real: merge cross-sessão em `cypress/reports/html/.jsons/`, arquitetura de
 +  // multi-instância do projeto mantém .jsons de sessões concorrentes/anteriores sem limpeza
 +  // imediata — ver `.agents/ROADMAP.md`). Sem este guard, `fse.readFileSync` lança ENOENT e

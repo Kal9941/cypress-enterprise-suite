@@ -549,7 +549,7 @@ describe('7. Clientes - Testes de Interface e Comportamento', () => {
 
     // -----------------------------------------------------------------------------
     // Documento (CPF/CNPJ) travado após preenchido (Issue front#527/PR #531,
-    // backend pharmacie-backend#615/#606): regra de dado, não de permissão — nenhuma
+    // backend omnicare-backend#615/#606): regra de dado, não de permissão — nenhuma
     // capability libera a edição de um documento já gravado.
     // -----------------------------------------------------------------------------
 

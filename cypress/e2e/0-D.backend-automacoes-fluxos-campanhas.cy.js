@@ -287,7 +287,7 @@ describe('0-D. Backend: Automações, Fluxos e Campanhas (API Real)', () => {
     // As automações nascem com nome único e são apagadas no after. Nada é enviado ao WhatsApp: a mensagem só é tentada no atendimento da massa, com a janela fechada.
     // Sem teste (`ROADMAP.md` P1-65): o envio real de `send_message`/`send_template` (interpolação, `{{e:HEX}}`, `text_invalid`, `template_unavailable`), o `round_robin`,
     // `message_content`, `entity_missing` (sem rota que apague substatus) e o `failed` do atendimento que sumiu.
-    // Anti-loop A2 (backend#788, decisão 7, #2.7): as escritas do motor rodam com a marca `PHARMACIE_AUTOMACAO` na transação e o trigger de `OC_ATENDIMENTO` não grava
+    // Anti-loop A2 (backend#788, decisão 7, #2.7): as escritas do motor rodam com a marca `OmniCare_AUTOMACAO` na transação e o trigger de `OC_ATENDIMENTO` não grava
     // evento; uma automação "observador" sem filtro registra só as 2 mudanças feitas pela API (status 1 e o substatus gatilho), nunca as 3 escritas do passo
     // `set_custom_status` do motor. Medido na dev em 2026-11-06 (aba-c): nenhum 3º log mais de 2 ciclos depois da escrita do motor.
     const TIMEOUT_ROTA = { timeout: 90000 };

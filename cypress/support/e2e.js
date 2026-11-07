@@ -141,7 +141,7 @@ beforeEach(function () {
     // Intercepta qualquer chamada direcionada à API real que não foi explicitamente tratada por um mock específico.
     // Como o Cypress avalia os intercepts em ordem reversa, qualquer intercept registrado posteriormente no teste terá precedência.
     // Este guard impede que requisições órfãs cheguem ao servidor real com token mockado, prevenindo retornos HTTP 401 e logouts acidentais.
-    cy.intercept(/^https?:\/\/api\.pharmacie\.dev\.br\/.*/, (req) => {
+    cy.intercept(/^https?:\/\/api\.OmniCare\.dev\.br\/.*/, (req) => {
       if (req.url.endsWith('.js') || req.url.endsWith('.css') || req.url.includes('/assets/')) {
         return req.continue();
       }

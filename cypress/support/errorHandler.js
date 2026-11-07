@@ -1,5 +1,5 @@
 /**
- * Módulo de Diagnóstico e Tratamento Inteligente de Erros E2E (Pharmacie Web)
+ * Módulo de Diagnóstico e Tratamento Inteligente de Erros E2E (OmniCare Web)
  *
  * Analisa as falhas do Cypress em tempo de execução, classifica a causa raiz
  * e formata uma mensagem clara, estruturada e acionável para o operador.
@@ -56,7 +56,7 @@ class ErrorHandler {
         categoria: 'TIMEOUT DE REDE / API LENTA (ESOCKETTIMEDOUT)',
         icone: '🚨',
         descricao: `A requisição para a API remota (${endpoint}) excedeu o tempo limite de resposta ou teve a conexão de socket interrompida pelo servidor.`,
-        acaoRecomendada: '1. Verifique se o servidor backend da Pharmacie (api.omnicare.dev.local) está operante e estável.\n2. Se este teste deve validar regras de tela sem depender da velocidade da rede externa, utilize Mocks de API.\n3. Se a lentidão for esperada para esta rota, ajuste o `responseTimeout` pontualmente.'
+        acaoRecomendada: '1. Verifique se o servidor backend da OmniCare (api.omnicare.dev.local) está operante e estável.\n2. Se este teste deve validar regras de tela sem depender da velocidade da rede externa, utilize Mocks de API.\n3. Se a lentidão for esperada para esta rota, ajuste o `responseTimeout` pontualmente.'
       };
     }
 
@@ -210,7 +210,7 @@ class ErrorHandler {
             categoria: 'FALHA DE SEGURANÇA / RBAC (ROTA PROTEGIDA PERMITIU ACESSO NÃO AUTORIZADO)',
             icone: '🛡️',
             descricao: 'O teste de controle de acesso esperava HTTP 401 Unauthorized ao enviar requisição sem token ou com token adulterado, mas o servidor retornou HTTP 200 OK.',
-            acaoRecomendada: '1. Verifique se getHeaders() no backendApiService.js removeu de fato o header Authorization.\n2. Confirme se o endpoint testado é autenticado ou se é uma rota pública da API Pharmacie.'
+            acaoRecomendada: '1. Verifique se getHeaders() no backendApiService.js removeu de fato o header Authorization.\n2. Confirme se o endpoint testado é autenticado ou se é uma rota pública da API OmniCare.'
           };
         }
 
@@ -240,7 +240,7 @@ class ErrorHandler {
             categoria: 'RESPOSTA HTTP 500 (INTERNAL SERVER ERROR) - CRASH NO BACKEND',
             icone: '💥',
             descricao: `O servidor backend sofreu uma falha interna não tratada (HTTP 500, esperava-se status ${esperado}). Isso indica quebra de query SQL, violação de constraint ou falha no serviço backend.`,
-            acaoRecomendada: '1. Verifique se algum filtro exigido pelo banco foi omitido (ex: channel_id na rota /channel-groups).\n2. Inspecione os logs do servidor backend da Pharmacie para identificar a exceção SQL/Node.\n3. Acione o time de backend se a requisição estiver estritamente aderente ao contrato.'
+            acaoRecomendada: '1. Verifique se algum filtro exigido pelo banco foi omitido (ex: channel_id na rota /channel-groups).\n2. Inspecione os logs do servidor backend da OmniCare para identificar a exceção SQL/Node.\n3. Acione o time de backend se a requisição estiver estritamente aderente ao contrato.'
           };
         }
 
@@ -393,7 +393,7 @@ class ErrorHandler {
   gerarRelatorioTexto(record) {
     return [
       '================================================================================',
-      ` ${record.icone} FALHA DETECTADA NO TESTE E2E (PHARMACIE WEB)`,
+      ` ${record.icone} FALHA DETECTADA NO TESTE E2E (OmniCare Web)`,
       '================================================================================',
       `📅 DATA/HORA: ${record.timestampBr} (${record.timestamp})`,
       `📁 ARQUIVO SPEC: ${record.spec}`,
@@ -540,7 +540,7 @@ class ErrorHandler {
 </head>
 <body>
   <div class="debug-banner">
-    <h3 style="margin-top:0; color:#fee2e2;">🚨 SNAPSHOT DE TELA NO MOMENTO DA FALHA (PHARMACIE WEB)</h3>
+    <h3 style="margin-top:0; color:#fee2e2;">🚨 SNAPSHOT DE TELA NO MOMENTO DA FALHA (OmniCare Web)</h3>
     <div><strong>📅 Data/Hora:</strong> ${new Date().toLocaleString('pt-BR')}</div>
     <div><strong>🌐 URL:</strong> ${url}</div>
     <div><strong>📌 Título:</strong> ${titulo}</div>

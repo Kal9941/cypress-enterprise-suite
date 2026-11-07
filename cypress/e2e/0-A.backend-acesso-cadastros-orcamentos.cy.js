@@ -1662,7 +1662,7 @@ describe('0-A. Backend: Acesso, Cadastros e Orçamentos (API Real)', () => {
         expect(res.body.data, 'Array de orçamentos').to.be.an('array').and.have.length.at.least(1);
 
         res.body.data.forEach((budget) => {
-          // Garantia contratual PR #474 / pharmacie-front#334:
+          // Garantia contratual PR #474 / omnicare-front#334:
           // status é Int não-nulo em todas as linhas para suportar fail-closed na UI
           expect(budget).to.have.property('status');
           expect(budget.status, `Campo status do orçamento #${budget.code} não pode ser nulo`).to.not.be.null;
@@ -2171,7 +2171,7 @@ describe('0-A. Backend: Acesso, Cadastros e Orçamentos (API Real)', () => {
   // ---------------------------------------------------------------------------
   // CONTEXTO 35: CONFIGURAÇÃO DE TEXTO DO ORÇAMENTO POR CANAL E CAMPOS DE FÓRMULA
   // (Issue backend#620, implementada na #621 — paridade com o Desktop, sub-issue
-  // de pharmacie-front#443)
+  // de omnicare-front#443)
   // ---------------------------------------------------------------------------
   context('18. Configuração de Texto do Orçamento por Canal e Campos de Fórmula (Issue backend#620)', () => {
 

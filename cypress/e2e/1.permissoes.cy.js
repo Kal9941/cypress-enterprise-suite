@@ -109,7 +109,7 @@ describe('1. Permissões - Validação de Acessos', () => {
         // Modo API Real: obtém diretamente via cy.request com o Bearer token do sessionStorage
         // Isso é imune a timing, streaming, gzip/brotli ou cache 304 do navegador
         return cy.window().then((win) => {
-          const token = win?.sessionStorage?.getItem('pharmacie_access_token') || Cypress.env('backendAuthToken');
+          const token = win?.sessionStorage?.getItem('omnicare_access_token') || Cypress.env('backendAuthToken');
           const apiUrl = configEnv.API_URL || 'https://api.omnicare.dev.local';
 
           if (token) {
@@ -165,7 +165,7 @@ describe('1. Permissões - Validação de Acessos', () => {
           const id = match ? match[1] : null;
 
           return cy.window().then((win) => {
-            const token = win?.sessionStorage?.getItem('pharmacie_access_token') || Cypress.env('backendAuthToken');
+            const token = win?.sessionStorage?.getItem('omnicare_access_token') || Cypress.env('backendAuthToken');
             const apiUrl = configEnv.API_URL || 'https://api.omnicare.dev.local';
 
             if (token && id) {

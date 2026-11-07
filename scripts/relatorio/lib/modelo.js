@@ -292,7 +292,7 @@ function montarMeta(raiz, opcoes) {
   const env = process.env;
   const ci = !!opcoes.ci || env.GITHUB_ACTIONS === 'true';
   const meta = {
-    titulo: 'Relatório de testes · Pharmacie Web',
+    titulo: 'Relatório de testes · OmniCare Web',
     geradoEm: new Date().toISOString(),
     origem: ci ? 'ci' : 'local',
     branch: ci ? env.GITHUB_REF_NAME || null : git(raiz, ['rev-parse', '--abbrev-ref', 'HEAD']),

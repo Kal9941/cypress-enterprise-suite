@@ -38,8 +38,8 @@ class LoginPage {
    */
   corromperTokenSessao() {
     return cy.window().then((win) => {
-      const tokenAtual = win.sessionStorage.getItem('pharmacie_access_token');
-      win.sessionStorage.setItem('pharmacie_access_token', `${tokenAtual}_invalido_e2e`);
+      const tokenAtual = win.sessionStorage.getItem('omnicare_access_token');
+      win.sessionStorage.setItem('omnicare_access_token', `${tokenAtual}_invalido_e2e`);
     });
   }
 }

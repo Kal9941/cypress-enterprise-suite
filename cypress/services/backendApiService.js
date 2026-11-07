@@ -171,7 +171,7 @@ class BackendApiService {
   }
 
   // =========================================================================
-  // MÉTODOS DE NEGÓCIO E ROTAS MAPEADAS DA API PHARMACIE
+  // MÉTODOS DE NEGÓCIO E ROTAS MAPEADAS DA API OmniCare
   // =========================================================================
 
   /**

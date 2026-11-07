@@ -6,7 +6,7 @@ const configEnv = require('../../env.json');
 
 /**
  * Classe responsável pela centralização de Mocks, Payloads e Interceptações de API
- * para a tela de Login e Autenticação do Pharmacie Web.
+ * para a tela de Login e Autenticação do OmniCare Web.
  * 
  * Estende BaseMock com suporte ao Strategy Pattern (Mock Hermético vs API Real Auto-Sync).
  */
@@ -183,7 +183,7 @@ class LoginMocks extends BaseMock {
       return b64.replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
     };
 
-    return `${toB64Url(header)}.${toB64Url(payload)}.mock_signature_pharmacie_web`;
+    return `${toB64Url(header)}.${toB64Url(payload)}.mock_signature_OmniCare_web`;
   }
 
   /**

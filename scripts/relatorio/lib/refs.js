@@ -8,8 +8,8 @@ const RAIZ = path.join(__dirname, '..', '..', '..');
 
 // Só linka repositório conhecido (contrato em MODELO.md)
 const REPOS = {
-  backend: 'omnicare-org/pharmacie-backend',
-  front: 'omnicare-org/pharmacie-front',
+  backend: 'omnicare-org/omnicare-backend',
+  front: 'omnicare-org/omnicare-front',
   cypress: 'omnicare-org/cypress-enterprise-suite',
 };
 

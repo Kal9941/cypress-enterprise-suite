@@ -812,7 +812,7 @@ describe('0-B. Backend: Atendimentos (API Real)', () => {
     });
 
     it('7.2 deve rotular com precisão mídias de áudio enviadas pelo atendente (type = 0) com body vazio como content_type: audio (PR #497 / Issue #383)', () => {
-      // Contexto PR #497: Corrige omnicare-org/pharmacie-front#383, onde cards de atendimentos com mídias
+      // Contexto PR #497: Corrige omnicare-org/omnicare-front#383, onde cards de atendimentos com mídias
       // enviadas pelo atendente ficavam com a prévia em branco e type numérico opaco.
 
       // Act: Consulta a listagem da fila ampliando a janela e tamanho de página para localizar o atendimento com áudio
@@ -2233,7 +2233,7 @@ describe('0-B. Backend: Atendimentos (API Real)', () => {
     // Rota nova `GET /attendances/channels`, para o seletor Canal do filtro da fila: traz os canais ATIVOS de `OC_CANAL` (`ATIVO = -1`, backend#721/PR #733, como no legado; até então vinham
     // também os inativos), inclusive Pedido Pago (`channel_subtype: 2`),
     // ordenados por nome, com o mesmo item de `/channels` (sem campo novo), e exige só o acesso ao módulo de atendimento (418). `/channels` (Iniciar atendimento) não mudou: só canais ativos
-    // que não são Pedido Pago, exigindo 636. O front só passa a usar a rota nova com a pharmacie-front#582 (em 2026-10-16 o bundle da dev ainda chama só `/channels`, `ROADMAP.md` P1).
+    // que não são Pedido Pago, exigindo 636. O front só passa a usar a rota nova com a omnicare-front#582 (em 2026-10-16 o bundle da dev ainda chama só `/channels`, `ROADMAP.md` P1).
     // Os canais e a ordem do homolog (6 canais, medidos em 2026-10-16) são massa: os testes afirmam a regra (ordem por nome, superconjunto de `/channels`, presença de `channel_subtype: 2`),
     // nunca a lista fixa. Cenários 3 e 4 (usuário com 418 sem 636, e sem 418) pedem conta restrita, que o `env.json` não tem: `[R-CAPXACAO]`, só a consistência com as capabilities da conta.
     // A rota ignora o `store_id` do caminho (loja 2 ou inexistente devolvem a mesma lista, como as capabilities da loja): medido, sem asserção.

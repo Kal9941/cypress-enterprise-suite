@@ -19,7 +19,7 @@ import { regexApi, rotaApi } from '../support/rotaApi';
 
 /**
  * Classe responsável pela centralização de Mocks, Payloads e Interceptações de API
- * para a tela de Gestão de Atendimentos do Pharmacie Web.
+ * para a tela de Gestão de Atendimentos do OmniCare Web.
  * 
  * Estende BaseMock com suporte ao Strategy Pattern (Mock Hermético vs API Real Auto-Sync).
  */
@@ -2839,7 +2839,7 @@ class AtendimentosMocks extends BaseMock {
 
   /**
    * Responde o POST /attendances/:id/payment-links com erro, no envelope compartilhado do backend
-   * (`{ status, error, message, code?, timestamp }`, `code` ausente quando não há código; pharmacie-backend#445).
+   * (`{ status, error, message, code?, timestamp }`, `code` ausente quando não há código; omnicare-backend#445).
    * Sempre mockado: é o que permite exercitar a classificação do erro na modal (front#332) sem cobrar ninguém.
    * @param {string|number} attendanceId ID do atendimento ('*' para todos)
    * @param {number} statusCode Status HTTP da resposta
@@ -2853,7 +2853,7 @@ class AtendimentosMocks extends BaseMock {
 
   /**
    * Intercepta a listagem de orçamentos vinculados (/attendances/:id/budgets e /quotes)
-   * A rota oficial do frontend Pharmacie Web é /attendances/:id/budgets
+   * A rota oficial do frontend OmniCare Web é /attendances/:id/budgets
    * @param {string|number} attendanceId ID do atendimento ('*' para todos)
    * @param {object|null} customPayload Payload customizado
    * @param {boolean} forceMock Força resposta mockada mesmo se USE_MOCKS for falso

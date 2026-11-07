@@ -1,5 +1,5 @@
 /**
- * Auditoria de Rotas de Backend (Pharmacie Web)
+ * Auditoria de Rotas de Backend (OmniCare Web)
  *
  * Extrai estaticamente todas as rotas mapeadas em cypress/services/backendApiService.js
  * (fonte única de verdade das rotas de backend, per .agents/AGENTS.md), cruza com o uso
@@ -277,7 +277,7 @@ async function checagemAoVivo(metodosGet) {
 
 async function run() {
   console.log('===============================================================');
-  console.log('🧭 AUDITORIA DE ROTAS DE BACKEND (PHARMACIE WEB)');
+  console.log('🧭 AUDITORIA DE ROTAS DE BACKEND (OmniCare Web)');
   console.log('===============================================================');
 
   const { metodos, orfaos, fantasmasSemTeste, fantasmasComTeste } = auditoriaEstatica();

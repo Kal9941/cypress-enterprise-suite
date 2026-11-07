@@ -8,7 +8,7 @@ import { rotaApi } from '../support/rotaApi';
 
 /**
  * Classe responsável pela centralização de Mocks, Payloads e Interceptações de API
- * para a tela Central / Dashboard do Pharmacie Web.
+ * para a tela Central / Dashboard do OmniCare Web.
  * 
  * Estende BaseMock com suporte ao Strategy Pattern (Mock Hermético vs API Real Auto-Sync).
  */

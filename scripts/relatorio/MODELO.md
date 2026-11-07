@@ -1,4 +1,4 @@
-# Modelo de dados do relatório de testes (Pharmacie Web)
+# Modelo de dados do relatório de testes (OmniCare Web)
 
 Fluxo: **entradas** (JSON do Mochawesome, passos do hook, categorias de falha, docs) → `gerar-relatorio.js` monta o **modelo** abaixo → `template/` renderiza o site estático em `cypress/reports/painel/`. O gerador e o template só conversam por este contrato.
 
@@ -53,7 +53,7 @@ anexos: [ { tipo: 'screenshot'|'log', titulo, arquivo (relativo ao painel) | dat
 ```
 `skipped` = `it.skip` / `[SKIP]` de backlog / pulado por outro motivo; `skippedMassa` = pulou por falta de massa (`motivoPulo` preenchido, regra `[R-ATEMPORAL]` do `AGENTS.md`).
 ## `Ref`
-`{ tipo: 'issue'|'pr', repo: 'backend'|'front'|'cypress', numero, url }`. Extraído do título do `context` (`Issue backend#783/PR #773`). Só linka repositório conhecido: `backend` → `omnicare-org/pharmacie-backend`, `front` → `omnicare-org/pharmacie-front`, `cypress` → `omnicare-org/cypress-enterprise-suite`; `PR #N` sem repo herda o da issue do mesmo texto; `#N` solto não linka.
+`{ tipo: 'issue'|'pr', repo: 'backend'|'front'|'cypress', numero, url }`. Extraído do título do `context` (`Issue backend#783/PR #773`). Só linka repositório conhecido: `backend` → `omnicare-org/omnicare-backend`, `front` → `omnicare-org/omnicare-front`, `cypress` → `omnicare-org/cypress-enterprise-suite`; `PR #N` sem repo herda o da issue do mesmo texto; `#N` solto não linka.
 
 ## Regras
 - Nenhum segredo no relatório: remover Bearer/JWT, senhas e o CNPJ/usuário do `env.json` de mensagens, passos e anexos (o `errorHandler.js` já tem os `replace` de token).

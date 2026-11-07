@@ -6,7 +6,7 @@ Sem issue formal. Produto de teste: **PASSIFLORA EXTRATO SECO** (id `1004866`, l
 **Fontes cruzadas**
 1. `docs/PERMISSOES_TELAS_RECEITA_REVENDA_REFAZER.md` — catálogo legado `PERMISSAO_MENU` (53 permissões da 145).
 2. `docs/PERMISSION_REFERENCE.md` — o que já foi mapeado para o backend (domínio Receita, MOV 0145).
-3. `appium-pharmacie-desktop` — inventário estático da tela (`tests/fixtures/screen-inventory/145.{png,xml}`, `.agents/PROJECT_CONTEXT.md` §"Inventário de telas"): `TfMOV_0145`, botões `TBitBtn` com `Name` próprio, grids owner-drawn (sem linha em UIA). O projeto Appium só automatiza login hoje; **não há cenário da 145 executado** — a análise do desktop é de interface, não de comportamento.
+3. `appium-OmniCare-desktop` — inventário estático da tela (`tests/fixtures/screen-inventory/145.{png,xml}`, `.agents/PROJECT_CONTEXT.md` §"Inventário de telas"): `TfMOV_0145`, botões `TBitBtn` com `Name` próprio, grids owner-drawn (sem linha em UIA). O projeto Appium só automatiza login hoje; **não há cenário da 145 executado** — a análise do desktop é de interface, não de comportamento.
 4. Bundle real do front (`app.omnicare.dev.local`, `index-Rp8uKcJK.js` + `responseParser-B9aFvyXJ.js`) — rotas, schemas zod e testids da tela de receita.
 5. 7 rodadas de sonda na API real (spec descartável, removido): ~450 chamadas.
 

@@ -1,18 +1,18 @@
 # Permissões das telas 145 (Receita), 232 (Revenda) e 378 (Refazer)
 
 Levantamento feito em 2026-10-14, **somente leitura** (`SELECT`), no banco do tenant de teste
-`consulfarma`, tabela de catálogo `PERMISSAO_MENU`.
+`demostore`, tabela de catálogo `PERMISSAO_MENU`.
 
 ## Como ler
 
 - **Origem do vínculo permissão ↔ tela:** o nome da permissão e o caminho no menu
   (`DESCRICAOPERMISSAO`) e, quando existe, o formulário (`FRM_NOME`). **Não foi lido o código do
-  Pharmacie**, então não está confirmado quais permissões a tela consulta de fato — a lista é
+  OmniCare**, então não está confirmado quais permissões a tela consulta de fato — a lista é
   "o que o catálogo associa à tela", não "o que o formulário checa".
 - **Tipo:** `I/A/E` = suporta incluir, alterar e excluir (colunas `TP_INCLUIR`/`TP_ALTERAR`/
   `TP_EXCLUIR` do catálogo). `liga/desliga` = os três em `0`, vale só a coluna `ATIVO` de
   `PERMISSAO_DETALHE`.
-- **Valores:** `-1` = sim, `0` = não (padrão `RADIO_CHECK` do Pharmacie).
+- **Valores:** `-1` = sim, `0` = não (padrão `RADIO_CHECK` do OmniCare).
 - **Modelo:** `PERMISSAO_MENU` (catálogo) → `PERMISSAO_DETALHE` (uma linha por funcionário × item,
   criada zerada pela procedure `CAD_PERMISSAO_DETALHE_I`). Perfis prontos em `PERMISSAO_PADRAO`.
 

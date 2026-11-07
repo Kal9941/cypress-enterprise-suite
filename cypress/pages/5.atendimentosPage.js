@@ -3103,7 +3103,7 @@ class AtendimentosPage {
             prescriber_id: 18780,
             prescriber_name: 'ABADIO JOSE SILVA',
             pickup_store_id: storeId,
-            pickup_store_name: '*** PHARMACIE - DEMO - CONSULFARMA'
+            pickup_store_name: '*** OmniCare - DEMO - demostore'
           }
         }).then((resPrescription) => {
           const prescriptionId = resPrescription.body.id;

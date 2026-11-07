@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Gerador de dados do relatório de testes (Pharmacie Web).
+ * Gerador de dados do relatório de testes (OmniCare Web).
  *
  * Lê o Mochawesome (`.jsons`, depois o JSON embutido no HTML, depois o JUnit), os passos gravados pelo hook,
  * classifica as falhas, liga cada context às issues/PRs e à área, confere a contagem com os docs e grava

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "titulo": "Pharmacie Web — Relatório de testes E2E",
+    "titulo": "OmniCare Web — Relatório de testes E2E",
     "geradoEm": "2026-10-28T19:43:10.000Z",
     "origem": "ci",
     "branch": "test/atemporal-massa-revenda-finalize",
@@ -60,13 +60,13 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 783,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/783"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 773,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/773"
             }
           ]
         },
@@ -86,7 +86,7 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 790,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/790"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/790"
             }
           ]
         },
@@ -106,13 +106,13 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 801,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/801"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/801"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 805,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/805"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/805"
             }
           ]
         },
@@ -132,7 +132,7 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 812,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/812"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/812"
             },
             {
               "tipo": "pr",
@@ -158,13 +158,13 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 783,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/783"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 773,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/773"
             }
           ],
           "areas": [
@@ -208,13 +208,13 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 783,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/783"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 773,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/773"
             }
           ],
           "areas": [
@@ -252,13 +252,13 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 783,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/783"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 773,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/773"
             }
           ],
           "areas": [
@@ -290,13 +290,13 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 783,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/783"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 773,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/773"
             }
           ],
           "areas": [
@@ -321,13 +321,13 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 783,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/783"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/783"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 773,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/773"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/773"
             }
           ],
           "areas": [
@@ -352,7 +352,7 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 790,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/790"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/790"
             }
           ],
           "areas": [
@@ -411,7 +411,7 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 790,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/790"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/790"
             }
           ],
           "areas": [
@@ -443,7 +443,7 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 790,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/790"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/790"
             }
           ],
           "areas": [
@@ -468,7 +468,7 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 790,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/790"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/790"
             }
           ],
           "areas": [
@@ -493,13 +493,13 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 801,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/801"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/801"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 805,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/805"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/805"
             }
           ],
           "areas": [
@@ -535,13 +535,13 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 801,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/801"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/801"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 805,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/805"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/805"
             }
           ],
           "areas": [
@@ -566,13 +566,13 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 801,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/801"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/801"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 805,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/805"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/805"
             }
           ],
           "areas": [
@@ -597,7 +597,7 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 812,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/812"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/812"
             },
             {
               "tipo": "pr",
@@ -628,7 +628,7 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 812,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/812"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/812"
             },
             {
               "tipo": "pr",
@@ -672,7 +672,7 @@
               "tipo": "issue",
               "repo": "backend",
               "numero": 812,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/issues/812"
+              "url": "https://github.com/omnicare-org/omnicare-backend/issues/812"
             },
             {
               "tipo": "pr",
@@ -740,7 +740,7 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 412,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/412"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/412"
             }
           ]
         },
@@ -760,13 +760,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 420,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/420"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/420"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 431,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/431"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/431"
             }
           ]
         },
@@ -786,13 +786,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 455,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/455"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/455"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 460,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/460"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/460"
             }
           ]
         },
@@ -825,7 +825,7 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 412,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/412"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/412"
             }
           ],
           "areas": [
@@ -869,7 +869,7 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 412,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/412"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/412"
             }
           ],
           "areas": [
@@ -894,7 +894,7 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 412,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/412"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/412"
             }
           ],
           "areas": [
@@ -938,7 +938,7 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 412,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/412"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/412"
             }
           ],
           "areas": [
@@ -963,13 +963,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 420,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/420"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/420"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 431,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/431"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/431"
             }
           ],
           "areas": [
@@ -994,13 +994,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 420,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/420"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/420"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 431,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/431"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/431"
             }
           ],
           "areas": [
@@ -1048,13 +1048,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 420,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/420"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/420"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 431,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/431"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/431"
             }
           ],
           "areas": [
@@ -1079,13 +1079,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 420,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/420"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/420"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 431,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/431"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/431"
             }
           ],
           "areas": [
@@ -1110,13 +1110,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 455,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/455"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/455"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 460,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/460"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/460"
             }
           ],
           "areas": [
@@ -1170,13 +1170,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 455,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/455"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/455"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 460,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/460"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/460"
             }
           ],
           "areas": [
@@ -1201,13 +1201,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 455,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/455"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/455"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 460,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/460"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/460"
             }
           ],
           "areas": [
@@ -1334,13 +1334,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 501,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/501"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 509,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/509"
             }
           ]
         },
@@ -1360,7 +1360,7 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 518,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/518"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/518"
             }
           ]
         },
@@ -1380,13 +1380,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 530,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/530"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/530"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 820,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/820"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/820"
             }
           ]
         },
@@ -1426,13 +1426,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 501,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/501"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 509,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/509"
             }
           ],
           "areas": [
@@ -1476,13 +1476,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 501,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/501"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 509,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/509"
             }
           ],
           "areas": [
@@ -1507,13 +1507,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 501,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/501"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 509,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/509"
             }
           ],
           "areas": [
@@ -1538,13 +1538,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 501,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/501"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 509,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/509"
             }
           ],
           "areas": [
@@ -1591,13 +1591,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 501,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/501"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/501"
             },
             {
               "tipo": "pr",
               "repo": "front",
               "numero": 509,
-              "url": "https://github.com/omnicare-org/pharmacie-front/pull/509"
+              "url": "https://github.com/omnicare-org/omnicare-front/pull/509"
             }
           ],
           "areas": [
@@ -1622,7 +1622,7 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 518,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/518"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/518"
             }
           ],
           "areas": [
@@ -1647,7 +1647,7 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 518,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/518"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/518"
             }
           ],
           "areas": [
@@ -1672,7 +1672,7 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 518,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/518"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/518"
             }
           ],
           "areas": [
@@ -1697,7 +1697,7 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 518,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/518"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/518"
             }
           ],
           "areas": [
@@ -1722,13 +1722,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 530,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/530"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/530"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 820,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/820"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/820"
             }
           ],
           "areas": [
@@ -1766,13 +1766,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 530,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/530"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/530"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 820,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/820"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/820"
             }
           ],
           "areas": [
@@ -1797,13 +1797,13 @@
               "tipo": "issue",
               "repo": "front",
               "numero": 530,
-              "url": "https://github.com/omnicare-org/pharmacie-front/issues/530"
+              "url": "https://github.com/omnicare-org/omnicare-front/issues/530"
             },
             {
               "tipo": "pr",
               "repo": "backend",
               "numero": 820,
-              "url": "https://github.com/omnicare-org/pharmacie-backend/pull/820"
+              "url": "https://github.com/omnicare-org/omnicare-backend/pull/820"
             }
           ],
           "areas": [
