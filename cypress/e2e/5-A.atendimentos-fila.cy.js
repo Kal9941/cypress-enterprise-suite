@@ -1,4 +1,4 @@
-import AtendimentosPage from '../pages/5.atendimentosPage';
+﻿import AtendimentosPage from '../pages/5.atendimentosPage';
 import AtendimentosMocks from '../mocks/5.atendimentosMocks';
 import IniciarAtendimentoMocks from '../mocks/4.iniciarAtendimentoMocks';
 import api from '../services/backendApiService';
@@ -843,7 +843,7 @@ describe('5-A. Atendimentos - Fila e Status', () => {
 
         if (temOperadorLogadoNaLista) {
           // Cenário A: O atendimento está com outro atendente (ex: Italo Patrick).
-          // Transfere diretamente para o operador logado (Klismam Monteiro)
+          // Transfere diretamente para o operador logado (JOAO SILVA)
           cy.wrap($lista).find('[data-testid="option-atendente-klismam-monteiro"], [data-agent-id="122"], button:contains("Klismam")').first().click();
 
           if (isMock) {
@@ -980,7 +980,7 @@ describe('5-A. Atendimentos - Fila e Status', () => {
               customer: {
                 // customer_id (PR #429) é o que habilita o gatilho do menu do cliente
                 // (button-editar-cliente-icon); sem ele o painel lateral renderiza sem as ações.
-                customer_id: 867092,
+                customer_id: 100001,
                 name: 'Cliente Teste PR-380',
                 phone: '5562999999999',
                 email: null,
@@ -1797,7 +1797,7 @@ describe('5-A. Atendimentos - Fila e Status', () => {
           {
             id: 260800081,
             reference_at: "2026-08-21T08:00:00.000Z",
-            attendant_name: "KLISMAM MONTEIRO",
+            attendant_name: "JOAO SILVA",
             customer_name: "Carlos (Aguardando resposta há 4h)",
             messages: {
               unread_count: 0,
@@ -1810,7 +1810,7 @@ describe('5-A. Atendimentos - Fila e Status', () => {
           {
             id: 260800082,
             reference_at: "2026-08-21T11:00:00.000Z",
-            attendant_name: "KLISMAM MONTEIRO",
+            attendant_name: "JOAO SILVA",
             customer_name: "Mariana (Aguardando resposta há 1h)",
             messages: {
               unread_count: 0,

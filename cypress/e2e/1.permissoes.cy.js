@@ -1,4 +1,4 @@
-import AtendimentosPage from '../pages/5.atendimentosPage';
+﻿import AtendimentosPage from '../pages/5.atendimentosPage';
 import AtendimentosMocks from '../mocks/5.atendimentosMocks';
 import IniciarAtendimentoMocks from '../mocks/4.iniciarAtendimentoMocks';
 import IniciarAtendimentoPage from '../pages/4.iniciarAtendimentoPage';
@@ -1438,7 +1438,7 @@ describe('1. Permissões - Validação de Acessos', () => {
       AtendimentosMocks.interceptPatchClientApi('*');
       AtendimentosMocks.interceptAttendanceDetailApi('*', {
         ...AtendimentosMocks.mockAttendanceDetailData,
-        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 867092 }
+        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 100001 }
       });
 
       // 1. Caminho Concessão

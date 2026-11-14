@@ -1,4 +1,4 @@
-// cypress/e2e/0-A.backend-acesso-cadastros-orcamentos.cy.js
+﻿// cypress/e2e/0-A.backend-acesso-cadastros-orcamentos.cy.js
 // Suíte de Backend e Integração na API Real, parte A: acesso, RBAC/capabilities, recursos, loja, timestamps, catálogos e busca, clientes, orçamentos e links de pagamento.
 // Dividida do 0-A/0-B/0-C.backend-*.cy.js em 2026-10-20 (3 arquivos por tema, contexts com os números originais); executa via cy.request(), imune a mocks de interface.
 
@@ -666,7 +666,7 @@ describe('0-A. Backend: Acesso, Cadastros e Orçamentos (API Real)', () => {
   // ---------------------------------------------------------------------------
   context('9. Cadastro de Clientes e Sub-recursos (PRs #416 a #422 e #438)', () => {
 
-    const clientIdTeste = 867092;
+    const clientIdTeste = 100001;
     let novoClienteCriadoId = null;
 
     it('9.1 Deve expor as 18 capabilities de clientes e confirmar governança sob o recurso customer, antigo patient (PR #418 e #438, backend#808)', () => {
@@ -1784,8 +1784,8 @@ describe('0-A. Backend: Acesso, Cadastros e Orçamentos (API Real)', () => {
   context('15. Padronização Global de Timestamps em Instant (PR 3 - #341)', () => {
 
     const attendanceIdTeste = 260800149;
-    let clienteTesteId = 867092;
-    let clienteTesteNome = 'KLISMAM MONTEIRO';
+    let clienteTesteId = 100001;
+    let clienteTesteNome = 'JOAO SILVA';
 
     before(() => {
       // Localiza cliente padrão para associar à prescrição

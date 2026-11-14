@@ -1,4 +1,4 @@
-/**
+﻿/**
  * NetworkRecorder - Gravador e Reprodutor de Sessão de Rede (Record & Replay)
  * 
  * Permite que testes executados contra a API Real gravem automaticamente
@@ -216,7 +216,7 @@ class NetworkRecorder {
             if (responseBody && typeof responseBody === 'object' && (dynamicUserCode || dynamicClientName)) {
               responseBody = JSON.parse(JSON.stringify(responseBody));
               const attId = dynamicUserCode ? parseInt(dynamicUserCode, 10) : 122;
-              const attName = dynamicClientName ? dynamicClientName.toUpperCase() : 'KLISMAM MONTEIRO';
+              const attName = dynamicClientName ? dynamicClientName.toUpperCase() : 'JOAO SILVA';
               if (responseBody.attendance && responseBody.attendance.attendant) {
                 responseBody.attendance.attendant.id = attId;
                 responseBody.attendance.attendant.name = attName;

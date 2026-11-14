@@ -1,4 +1,4 @@
-// ***********************************************************
+﻿// ***********************************************************
 // This example support/e2e.js is processed and
 // loaded automatically before your test files.
 //
@@ -169,8 +169,8 @@ beforeEach(function () {
       body: {
         user_id: 122,
         cnpj: Cypress.env('USER_CNPJ') || "11111111111111",
-        profile: Cypress.env('USER_CODE') || "KLISMAMMONTEIRO",
-        display_name: Cypress.env('DEFAULT_CLIENT_NAME') || "KLISMAM MONTEIRO",
+        profile: Cypress.env('USER_CODE') || "Joaosilva",
+        display_name: Cypress.env('DEFAULT_CLIENT_NAME') || "JOAO SILVA",
         company_code: 10199,
         store_code: 1
       },
@@ -202,7 +202,7 @@ beforeEach(function () {
       statusCode: 200,
       body: {
         id: 122,
-        name: "KLISMAM MONTEIRO",
+        name: "JOAO SILVA",
         status: "available"
       },
       log: false

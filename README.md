@@ -1,4 +1,4 @@
-﻿# 🧪 Enterprise Cypress Automation Suite — Omnichannel Platform & CRM
+# 🧪 Enterprise Cypress Automation Suite — Omnichannel Platform & CRM
 
 [![GitHub Actions Status](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD%20Pipeline-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/Kal9941/cypress-enterprise-suite/actions/workflows/cypress.yml)
 [![Cypress Version](https://img.shields.io/badge/Cypress-v15.20.0-17202C?style=for-the-badge&logo=cypress&logoColor=white)](https://www.cypress.io/)

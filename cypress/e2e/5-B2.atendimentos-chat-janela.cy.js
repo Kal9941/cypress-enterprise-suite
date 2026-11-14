@@ -1,4 +1,4 @@
-import AtendimentosPage from '../pages/5.atendimentosPage';
+﻿import AtendimentosPage from '../pages/5.atendimentosPage';
 import AtendimentosMocks from '../mocks/5.atendimentosMocks';
 import IniciarAtendimentoMocks from '../mocks/4.iniciarAtendimentoMocks';
 const configEnv = require('../../env.json');
@@ -896,7 +896,7 @@ describe('5-B2. Atendimentos - Chat: Janela 24h, Templates, Busca, Legenda e Per
             }
           },
           customer: {
-            customer_id: 867092,
+            customer_id: 100001,
             name: "MARISTELA",
             phone: "5511999998888",
             email: null,
@@ -1182,7 +1182,7 @@ describe('5-B2. Atendimentos - Chat: Janela 24h, Templates, Busca, Legenda e Per
                 expires_at: new Date(Date.now() + 86400000).toISOString()
               }
             },
-            customer: { customer_id: 867092, name: "MARISTELA", phone: "5511999998888", store_name: "LOJA TESTE" },
+            customer: { customer_id: 100001, name: "MARISTELA", phone: "5511999998888", store_name: "LOJA TESTE" },
             summaries: { quotes: { count: 2, total_amount: 346.49 }, payment_links: { count: 1, pending_confirmation_count: 1 } },
             capabilities: {
               ...AtendimentosMocks.mockAttendanceItemCapabilitiesData.capabilities,
@@ -1216,7 +1216,7 @@ describe('5-B2. Atendimentos - Chat: Janela 24h, Templates, Busca, Legenda e Per
           content_type: "text",
           text: "Olá, recebi o template e estou respondendo!",
           occurred_at: agora,
-          author: { id: 867092, name: "MARISTELA" }
+          author: { id: 100001, name: "MARISTELA" }
         };
 
         AtendimentosMocks.interceptMessagesListApi(idAtendimentoComInbound, {
@@ -1307,7 +1307,7 @@ describe('5-B2. Atendimentos - Chat: Janela 24h, Templates, Busca, Legenda e Per
         attendant_name: nomeOperadorProfile,
         attendant: attendant,
         attendant_id: idOperadorLogado,
-        customer_name: "Klismam Monteiro",
+        customer_name: "JOAO SILVA",
         customer_phone: "5511999998888",
         messages: {
           unread_count: 0,
@@ -1380,8 +1380,8 @@ describe('5-B2. Atendimentos - Chat: Janela 24h, Templates, Busca, Legenda e Per
           }
         },
         customer: {
-          customer_id: 867092,
-          name: "Klismam Monteiro",
+          customer_id: 100001,
+          name: "JOAO SILVA",
           phone: "5511999998888",
           email: null,
           store_name: "LOJA TESTE"

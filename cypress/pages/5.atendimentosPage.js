@@ -1,4 +1,4 @@
-import IniciarAtendimentoPage from './4.iniciarAtendimentoPage';
+﻿import IniciarAtendimentoPage from './4.iniciarAtendimentoPage';
 import AtendimentosMocks from '../mocks/5.atendimentosMocks';
 import { rotaApi } from '../support/rotaApi';
 
@@ -651,9 +651,9 @@ class AtendimentosPage {
    * @param {object} options
    */
   validarPreviaTemplateNoCompositor({
-    clienteNomeRegex = /\[Nome do cliente\]|Natália|Natalia|Klismam Monteiro|DAYANE|Maristela|[A-Za-zÀ-ÿ]+/i,
+    clienteNomeRegex = /\[Nome do cliente\]|Natália|Natalia|JOAO SILVA|DAYANE|Maristela|[A-Za-zÀ-ÿ]+/i,
     saudacaoRegex = /\[Saudação\]|Bom dia|Boa tarde|Boa noite/i,
-    atendenteRegex = /\[Apelido do atendente\]|Klismammonteiro|Klismam|FABRICIO|ITALO/i,
+    atendenteRegex = /\[Apelido do atendente\]|Joaosilva|Klismam|FABRICIO|ITALO/i,
     textoFixo = 'OmniCare',
     clientePrimeiroNomeRegex = /\[Primeiro nome do cliente\]|Natália|Natalia|Klismam|DAYANE|Maristela|[A-Za-zÀ-ÿ]+/i,
     textoVariavel = ''
@@ -687,9 +687,9 @@ class AtendimentosPage {
    * @param {object} options
    */
   validarMensagemEnviadaComTiposPrevia({
-    clienteNomeRegex = /\[Nome do cliente\]|Natália|Natalia|Klismam Monteiro|DAYANE|Maristela|[A-Za-zÀ-ÿ]+/i,
+    clienteNomeRegex = /\[Nome do cliente\]|Natália|Natalia|JOAO SILVA|DAYANE|Maristela|[A-Za-zÀ-ÿ]+/i,
     saudacaoRegex = /\[Saudação\]|Bom dia|Boa tarde|Boa noite/i,
-    atendenteRegex = /\[Apelido do atendente\]|Klismammonteiro|Klismam|FABRICIO|ITALO/i,
+    atendenteRegex = /\[Apelido do atendente\]|Joaosilva|Klismam|FABRICIO|ITALO/i,
     textoFixo = 'OmniCare',
     clientePrimeiroNomeRegex = /\[Primeiro nome do cliente\]|Natália|Natalia|Klismam|DAYANE|Maristela|[A-Za-zÀ-ÿ]+/i,
     textoVariavel = ''
@@ -3095,10 +3095,10 @@ class AtendimentosPage {
             prescription_type: 'human',
             status: 0,
             sale_type: 1,
-            patient_id: 867092,
-            patient_name: 'KLISMAM MONTEIRO',
-            buyer_id: 867092,
-            buyer_name: 'KLISMAM MONTEIRO',
+            patient_id: 100001,
+            patient_name: 'JOAO SILVA',
+            buyer_id: 100001,
+            buyer_name: 'JOAO SILVA',
             attendance_id: Number(idAtendimento),
             prescriber_id: 18780,
             prescriber_name: 'ABADIO JOSE SILVA',

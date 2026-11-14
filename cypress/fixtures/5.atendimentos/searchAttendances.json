@@ -1,10 +1,10 @@
-{
+﻿{
   "items": [
     {
       "id": 260900112,
       "reference_at": "2026-09-24T18:57:17.898Z",
-      "attendant_name": "KLISMAMMONTEIRO",
-      "customer_name": "KLISMAM MONTEIRO",
+      "attendant_name": "Joaosilva",
+      "customer_name": "JOAO SILVA",
       "customer_phone": "556293225337",
       "messages": {
         "unread_count": 0,
@@ -37,7 +37,7 @@
     {
       "id": 260900115,
       "reference_at": "2026-09-25T17:07:02.031Z",
-      "attendant_name": "KLISMAMMONTEIRO",
+      "attendant_name": "Joaosilva",
       "customer_name": "",
       "customer_phone": "5511999998888",
       "messages": {

@@ -1,4 +1,4 @@
-import BaseMock from './BaseMock';
+﻿import BaseMock from './BaseMock';
 import RecursosMocks from './1.recursosMocks';
 import IniciarAtendimentoMocks from './4.iniciarAtendimentoMocks';
 import mockSummaryData from '../fixtures/5.atendimentos/summary.json';
@@ -1069,7 +1069,7 @@ class AtendimentosMocks extends BaseMock {
       },
       customer: {
         ...this.mockAttendanceDetailData.customer,
-        customer_id: 867092,
+        customer_id: 100001,
         name: "Marcia",
         phone: "556296566248"
       },
@@ -1721,7 +1721,7 @@ class AtendimentosMocks extends BaseMock {
           "id": 260800098,
           "reference_at": "2026-08-24T14:03:53.601Z",
           "attendant_name": null,
-          "customer_name": "Klismam Monteiro",
+          "customer_name": "JOAO SILVA",
           "messages": {
             "unread_count": 0,
             "last_message": {
@@ -1777,10 +1777,10 @@ class AtendimentosMocks extends BaseMock {
         {
           "id": 260800053,
           "reference_at": "2026-08-17T11:59:23.181Z",
-          "attendant_name": nomeAtendenteMock || "KLISMAM MONTEIRO",
+          "attendant_name": nomeAtendenteMock || "JOAO SILVA",
           "attendant": {
             "id": idAtendenteMock || 122,
-            "name": nomeAtendenteMock || "KLISMAM MONTEIRO",
+            "name": nomeAtendenteMock || "JOAO SILVA",
             "user_id": idAtendenteMock || 122
           },
           "attendant_id": idAtendenteMock || 122,
@@ -1986,7 +1986,7 @@ class AtendimentosMocks extends BaseMock {
           service_window: null
         },
         customer: {
-          customer_id: 867092,
+          customer_id: 100001,
           name: "MARISTELA",
           phone: "5511999998888",
           email: null,
@@ -2141,7 +2141,7 @@ class AtendimentosMocks extends BaseMock {
           }
         },
         customer: {
-          customer_id: 867092,
+          customer_id: 100001,
           name: "MARISTELA",
           phone: "5511999998888",
           email: null,
@@ -2290,7 +2290,7 @@ class AtendimentosMocks extends BaseMock {
           service_window: null
         },
         customer: {
-          customer_id: 867092,
+          customer_id: 100001,
           name: "MARISTELA",
           phone: "5511999998888",
           email: null,
@@ -3633,7 +3633,7 @@ class AtendimentosMocks extends BaseMock {
 
     const corpoSucesso = {
       id: attendanceId !== '*' ? Number(attendanceId) : 260800035,
-      customer: { customer_id: 867092, name: 'KLISMAM MONTEIRO', phone: '5511999998888' }
+      customer: { customer_id: 100001, name: 'JOAO SILVA', phone: '5511999998888' }
     };
     const corpoErro = { error: 'Internal Server Error' };
     const body = statusCode >= 200 && statusCode < 300
@@ -4116,7 +4116,7 @@ class AtendimentosMocks extends BaseMock {
    * @param {string} nomeCliente Nome do cliente
    * @param {{id: number, name: string}} grupo Grupo do atendimento (padrão: 7 ATENDIMENTO)
    */
-  interceptMockAtendimentoSemAtendente(idAtendimento = 260800105, nomeCliente = 'Klismam Monteiro', grupo = { id: 7, name: 'ATENDIMENTO' }) {
+  interceptMockAtendimentoSemAtendente(idAtendimento = 260800105, nomeCliente = 'JOAO SILVA', grupo = { id: 7, name: 'ATENDIMENTO' }) {
     this.interceptAttendanceItemCapabilitiesApi(idAtendimento);
 
     const detailRegex = new RegExp(regexApi(`attendances/${idAtendimento}([?#].*)?$`));
@@ -4221,7 +4221,7 @@ class AtendimentosMocks extends BaseMock {
     idAtendimento = 260800106,
     nomeAtendente = null,
     idAtendente = null,
-    nomeCliente = 'Klismam Monteiro'
+    nomeCliente = 'JOAO SILVA'
   ) {
     const defaultAttendant = this.getLoggedAttendant();
     const finalNomeAtendente = nomeAtendente || defaultAttendant.name;
@@ -4413,7 +4413,7 @@ class AtendimentosMocks extends BaseMock {
     const attendant = this.getLoggedAttendant();
     const defaultPayload = {
       items: [
-        { id: attendant.id || 122, name: attendant.name || "KLISMAM MONTEIRO", commissioned: false },
+        { id: attendant.id || 122, name: attendant.name || "JOAO SILVA", commissioned: false },
         { id: 55, name: "AGENCIAULAB", commissioned: false },
         { id: 3, name: "ALEX-PH24", commissioned: false },
         { id: 114, name: "JOAO RICARDO DA SILVA", commissioned: false }

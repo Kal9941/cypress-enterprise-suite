@@ -1,4 +1,4 @@
-import AtendimentosPage from '../pages/5.atendimentosPage';
+﻿import AtendimentosPage from '../pages/5.atendimentosPage';
 import AtendimentosMocks from '../mocks/5.atendimentosMocks';
 import IniciarAtendimentoMocks from '../mocks/4.iniciarAtendimentoMocks';
 import RecursosMocks from '../mocks/1.recursosMocks';
@@ -69,7 +69,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
       // capabilities corretas) — o payload-base de detalhe não traz esse campo por padrão.
       AtendimentosMocks.interceptAttendanceDetailApi('*', {
         ...AtendimentosMocks.mockAttendanceDetailData,
-        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 867092 }
+        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 100001 }
       });
       // resources/client-capabilities são buscados no boot da tela — o beforeEach global já visitou
       // a rota antes deste bloco registrar os intercepts acima, então um reload força o refetch sob
@@ -243,7 +243,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
       AtendimentosMocks.interceptClientCapabilitiesApi();
       AtendimentosMocks.interceptAttendanceDetailApi('*', {
         ...AtendimentosMocks.mockAttendanceDetailData,
-        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 867092 }
+        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 100001 }
       });
       const clienteSemEndereco = { ...AtendimentosMocks.mockClientDetailData, addresses: [] };
       AtendimentosMocks.interceptClientDetailApi('*', clienteSemEndereco);
@@ -344,7 +344,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
       AtendimentosPage.elements.menuVincularCliente().click();
       AtendimentosPage.elements.inputBuscaVincularCliente().type('mar');
       cy.wait('@searchClients');
-      AtendimentosPage.elements.getSugestaoVincularClientePorId(867092).click();
+      AtendimentosPage.elements.getSugestaoVincularClientePorId(100001).click();
       AtendimentosPage.elements.btnVincularClienteConfirmar().should('not.be.disabled').click();
       cy.wait('@linkCustomerPatch');
 
@@ -358,7 +358,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
       AtendimentosPage.elements.menuVincularCliente().click();
       AtendimentosPage.elements.inputBuscaVincularCliente().type('mar');
       cy.wait('@searchClients');
-      AtendimentosPage.elements.getSugestaoVincularClientePorId(867092).click();
+      AtendimentosPage.elements.getSugestaoVincularClientePorId(100001).click();
       AtendimentosPage.elements.btnVincularClienteConfirmar().should('not.be.disabled').click();
       cy.wait('@linkCustomerPatch');
 
@@ -380,7 +380,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
       AtendimentosPage.elements.menuVincularCliente().click();
       AtendimentosPage.elements.inputBuscaVincularCliente().type('mar');
       cy.wait('@searchClients');
-      AtendimentosPage.elements.getSugestaoVincularClientePorId(867092).click();
+      AtendimentosPage.elements.getSugestaoVincularClientePorId(100001).click();
       AtendimentosPage.elements.btnVincularClienteConfirmar().should('not.be.disabled').click();
       cy.wait('@linkCustomerPatch');
 
@@ -392,7 +392,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
     });
 
     // Corrigido em 2026-10-19 (Issue front#597): o vermelho que aqui se lia como "gap do front" vinha do mock. O `GET .../attendances/:id` do beforeEach é estático e devolve
-    // sempre um atendimento SEM cliente (`customer` sem `customer_id`); o PATCH do vínculo devolve `customer_id: 867092`, mas a tela não monta o detalhe a partir dessa resposta, e sim
+    // sempre um atendimento SEM cliente (`customer` sem `customer_id`); o PATCH do vínculo devolve `customer_id: 100001`, mas a tela não monta o detalhe a partir dessa resposta, e sim
     // do GET. O front invalida o detalhe no onSuccess da mutação (`invalidateAttendanceOwnedSurfaces`), refaz o GET e, recebendo de novo um atendimento sem cliente, mantém
     // "Vincular cliente": o comportamento certo para o dado recebido. Por isso o teste registra de novo o GET do detalhe, já com o cliente, antes de confirmar (o intercept
     // registrado por último vence, e o GET do carregamento inicial, feito antes, segue sem cliente) e espera o refetch. "Dados do cliente" só renderiza no popover com
@@ -406,12 +406,12 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
       const base = AtendimentosMocks.mockAttendanceDetailData;
       AtendimentosMocks.interceptAttendanceDetailApi('*', {
         ...base,
-        customer: { ...base.customer, customer_id: 867092, name: 'KLISMAM MONTEIRO' },
+        customer: { ...base.customer, customer_id: 100001, name: 'JOAO SILVA' },
       });
 
       AtendimentosPage.elements.inputBuscaVincularCliente().type('mar');
       cy.wait('@searchClients');
-      AtendimentosPage.elements.getSugestaoVincularClientePorId(867092).click();
+      AtendimentosPage.elements.getSugestaoVincularClientePorId(100001).click();
       AtendimentosPage.elements.btnVincularClienteConfirmar().should('not.be.disabled').click();
       cy.wait('@linkCustomerPatch');
       cy.wait('@getAttendanceDetail'); // refetch disparado pela invalidação
@@ -500,7 +500,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
           id: 999101,
           name: 'Cliente Teste E2E',
           cpf_cnpj: null,
-          phone: { prefix: '62', number: '993225337', whatsapp: false },
+          phone: { prefix: '11', number: '999998888', whatsapp: false },
           phone_count: 1
         }],
         total: 1
@@ -970,7 +970,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
 
   context('5. Busca de Cliente no Drawer "Dados do Cliente" (Issue front#457, PR #498)', () => {
     let originalUseMocksState;
-    const CLIENTE_ATUAL_NOME = 'KLISMAM MONTEIRO';
+    const CLIENTE_ATUAL_NOME = 'JOAO SILVA';
     const CLIENTE_NOVO_ID = 900001;
     const CLIENTE_NOVO_NOME = 'MARIA TESTE NOVA';
 
@@ -1007,7 +1007,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
       });
       AtendimentosMocks.interceptAttendanceDetailApi('*', {
         ...AtendimentosMocks.mockAttendanceDetailData,
-        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 867092, name: CLIENTE_ATUAL_NOME }
+        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 100001, name: CLIENTE_ATUAL_NOME }
       });
       IniciarAtendimentoMocks.interceptarBuscaCliente();
       cy.reload();
@@ -1156,14 +1156,14 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
     it('5.9 não deve mudar nada ao selecionar o próprio cliente já vinculado à ficha (no-op)', () => {
       abrirDrawerComPermissao650(true);
       IniciarAtendimentoMocks.interceptarBuscaCliente({
-        items: [{ id: 867092, name: CLIENTE_ATUAL_NOME, cpf_cnpj: '***.925.732-**', phone: { prefix: '62', number: '993225337', whatsapp: false }, phone_count: 2 }],
+        items: [{ id: 100001, name: CLIENTE_ATUAL_NOME, cpf_cnpj: '***.111.222-**', phone: { prefix: '11', number: '999998888', whatsapp: false }, phone_count: 2 }],
         total: 1
       });
       AtendimentosMocks.interceptLinkCustomerApi();
 
       AtendimentosPage.elements.inputNomeOuRazaoSocialCliente().clear().type('kli');
       cy.wait('@searchClients');
-      AtendimentosPage.elements.getSugestaoBuscaClienteDrawer('name', 867092).click();
+      AtendimentosPage.elements.getSugestaoBuscaClienteDrawer('name', 100001).click();
 
       AtendimentosPage.elements.getPopoverBuscaClienteDrawer('name').should('not.exist');
       AtendimentosPage.elements.inputNomeOuRazaoSocialCliente().should('have.value', CLIENTE_ATUAL_NOME);
@@ -1361,7 +1361,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
       });
       AtendimentosMocks.interceptAttendanceDetailApi('*', {
         ...AtendimentosMocks.mockAttendanceDetailData,
-        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 867092 }
+        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 100001 }
       });
       IniciarAtendimentoMocks.interceptarBuscaCliente();
       cy.reload();
@@ -1772,7 +1772,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
       AtendimentosMocks.interceptPatchClientAddressApi('*');
       AtendimentosMocks.interceptAttendanceDetailApi('*', {
         ...AtendimentosMocks.mockAttendanceDetailData,
-        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 867092 }
+        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 100001 }
       });
       cy.reload();
       AtendimentosPage.elements.tituloAtendimentos().should('be.visible');
@@ -1868,7 +1868,7 @@ describe('5-C. Atendimentos - Dados do Cliente', () => {
       AtendimentosMocks.interceptClientCapabilitiesApi();
       AtendimentosMocks.interceptAttendanceDetailApi('*', {
         ...AtendimentosMocks.mockAttendanceDetailData,
-        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 867092 }
+        customer: { ...AtendimentosMocks.mockAttendanceDetailData.customer, customer_id: 100001 }
       });
       AtendimentosMocks.interceptClientDetailApi('*');
       AtendimentosMocks.interceptPostClientAddressApi('*');

@@ -1,4 +1,4 @@
-import IniciarAtendimentoMocks from '../mocks/4.iniciarAtendimentoMocks';
+﻿import IniciarAtendimentoMocks from '../mocks/4.iniciarAtendimentoMocks';
 
 class IniciarAtendimentoPage {
   // -------------------------------------------------------------
@@ -162,9 +162,9 @@ class IniciarAtendimentoPage {
    * @param {object} options
    */
   validarPreviaTemplateModal({
-    clienteNomeRegex = /\[Nome do cliente\]|Klismam Monteiro|DAYANE|MARISTELA/i,
+    clienteNomeRegex = /\[Nome do cliente\]|JOAO SILVA|DAYANE|MARISTELA/i,
     saudacaoRegex = /\[Saudação\]|Bom dia|Boa tarde|Boa noite/i,
-    atendenteRegex = /\[Apelido do atendente\]|Klismammonteiro|Klismam|FABRICIO|ITALO/i,
+    atendenteRegex = /\[Apelido do atendente\]|Joaosilva|Klismam|FABRICIO|ITALO/i,
     textoFixo = 'OmniCare',
     clientePrimeiroNomeRegex = /\[Primeiro nome do cliente\]|Klismam|DAYANE|MARISTELA/i,
     textoVariavel = ''

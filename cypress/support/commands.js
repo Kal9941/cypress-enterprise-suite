@@ -1,4 +1,4 @@
-// Configurações iniciais de ambiente
+﻿// Configurações iniciais de ambiente
 const configEnv = require('../../env.json');
 import LoginMocks from '../mocks/2.loginMocks';
 import CentralMocks from '../mocks/3.centralMocks';
@@ -65,7 +65,7 @@ Cypress.Commands.add('login', (
 
       cy.intercept('GET', rotaApi('attendants/*'), {
         statusCode: 200,
-        body: { id: 122, name: "KLISMAM MONTEIRO", status: "available" }
+        body: { id: 122, name: "JOAO SILVA", status: "available" }
       }).as('getAttendantDetailSession');
     }
   };

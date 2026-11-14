@@ -1,4 +1,4 @@
-{
+﻿{
   "items": [
     {
       "id": 260900069,
@@ -33,7 +33,7 @@
       "id": 260900090,
       "reference_at": "2026-09-21T12:23:37.745Z",
       "attendant_name": "COMERCIAL",
-      "customer_name": "KLISMAM MONTEIRO",
+      "customer_name": "JOAO SILVA",
       "customer_phone": "556293225337",
       "messages": {
         "unread_count": 1,

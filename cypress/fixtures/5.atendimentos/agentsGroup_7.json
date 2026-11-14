@@ -1,4 +1,4 @@
-{
+﻿{
   "group_id": 7,
   "group_name": "ATENDIMENTO",
   "agents": [
@@ -82,7 +82,7 @@
     },
     {
       "agent_id": 122,
-      "name": "KLISMAM MONTEIRO",
+      "name": "JOAO SILVA",
       "status": "busy",
       "last_attendance_at": "2026-08-17T16:32:38.859"
     },
